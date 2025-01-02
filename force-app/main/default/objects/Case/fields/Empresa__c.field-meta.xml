@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Empresa__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Empresa</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>17.COM</fullName>
+                <default>false</default>
+                <label>17.COM</label>
+            </value>
+            <value>
+                <fullName>17 Eventos</fullName>
+                <default>false</default>
+                <label>17 Eventos</label>
+            </value>
+            <value>
+                <fullName>17 Imóveis</fullName>
+                <default>false</default>
+                <label>17 Imóveis</label>
+            </value>
+            <value>
+                <fullName>17 Tickets</fullName>
+                <default>false</default>
+                <label>17 Tickets</label>
+            </value>
+            <value>
+                <fullName>Crédito</fullName>
+                <default>false</default>
+                <label>Crédito</label>
+            </value>
+            <value>
+                <fullName>Promotora</fullName>
+                <default>false</default>
+                <label>Promotora</label>
+            </value>
+            <value>
+                <fullName>17 Food (alimentos, bebidas e ingressos)</fullName>
+                <default>false</default>
+                <label>17 Food (alimentos, bebidas e ingressos)</label>
+            </value>
+            <value>
+                <fullName>17 Soluções financeiras</fullName>
+                <default>false</default>
+                <label>17 Soluções financeiras</label>
+            </value>
+            <value>
+                <fullName>Banda Apollo</fullName>
+                <default>false</default>
+                <label>Banda Apollo</label>
+            </value>
+            <value>
+                <fullName>Confia correspondente bancário</fullName>
+                <default>false</default>
+                <label>Confia correspondente bancário</label>
+            </value>
+            <value>
+                <fullName>Dona Mirinha Restaurante</fullName>
+                <default>false</default>
+                <label>Dona Mirinha Restaurante</label>
+            </value>
+            <value>
+                <fullName>Euro 17 corretora de seguros</fullName>
+                <default>false</default>
+                <label>Euro 17 corretora de seguros</label>
+            </value>
+            <value>
+                <fullName>Euro 17 Holding financeira</fullName>
+                <default>false</default>
+                <label>Euro 17 Holding financeira</label>
+            </value>
+            <value>
+                <fullName>Euro 17 Promotora</fullName>
+                <default>false</default>
+                <label>Euro 17 Promotora</label>
+            </value>
+            <value>
+                <fullName>Euro marketing esportivo</fullName>
+                <default>false</default>
+                <label>Euro marketing esportivo</label>
+            </value>
+            <value>
+                <fullName>Investimentos</fullName>
+                <default>false</default>
+                <label>Investimentos</label>
+            </value>
+            <value>
+                <fullName>JYU NANA SUSHI</fullName>
+                <default>false</default>
+                <label>JYU NANA SUSHI</label>
+            </value>
+            <value>
+                <fullName>Securitizadora</fullName>
+                <default>false</default>
+                <label>Securitizadora</label>
+            </value>
+            <value>
+                <fullName>Securitizadora Prime</fullName>
+                <default>false</default>
+                <label>Securitizadora Prime</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

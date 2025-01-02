@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AlteracaoComissao</fullName>
+    <active>true</active>
+    <businessProcess>Casos - Suporte</businessProcess>
+    <description>Casos relacionados a alteração de percentual e hierarquia de comissão</description>
+    <label>Alteração de Comissão</label>
+    <picklistValues>
+        <picklist>Assunto__c</picklist>
+        <values>
+            <fullName>2ª via do Boleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2ª via do Contrato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abandono de Atendimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alteração Cadastral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amortização</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blocklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelamento do Contrato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cobrança Indevida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contato Interno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contratação de Produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desconhece o Contrato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divergência de Informação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ligação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maus Tratos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não recebeu o boleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não recebeu o valor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procedimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queda de Ligação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renegociação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem Interação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspeita de Fraude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veracidade de Contato</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Atendimento__c</picklist>
+        <values>
+            <fullName>Mídias Sociais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ouvidoria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Empresa__c</picklist>
+        <values>
+            <fullName>17 Eventos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17 Imóveis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17 Tickets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17%2ECOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crédito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotora</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Funcao__c</picklist>
+        <values>
+            <fullName>Analista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diretor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerente de negocio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerente geral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestor%28a%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Superintendente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instagram</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telefone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Alta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baixa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Média</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Procedente__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Assunto__c</picklist>
+        <values>
+            <fullName>Antecipação de Recebíveis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital de Giro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consórcio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crefaz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EGI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EGV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F%2EI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F%2EV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FGI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FGTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FGV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investimentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não autorizou ou solicitou o contato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não conhece a pessoa procurada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não tem interesse pelo produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não é colaborador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quant%2E de parcelas divergente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queda de Ligação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem Interação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taxa divergente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valor das parcelas divergente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valor divergente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>É colaborador</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subtipo__c</picklist>
+        <values>
+            <fullName>Exclusão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inclusão</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Dúvida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reclamação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitação</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UnidadeNegocio__c</picklist>
+        <values>
+            <fullName>Investimentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operações estruturadas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produtos financeiros - Imóveis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produtos financeiros - Veículos</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

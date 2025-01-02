@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObrigatoriedadeCampoEmpresa</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISPICKVAL( TipoPessoa__c, &quot;Pessoa jurídica&quot;),
+ISBLANK( Company ),
+$Profile.Name  &lt;&gt; &quot;Salesforce API Only System Integrations&quot;
+)</errorConditionFormula>
+    <errorMessage>Favor informar o nome da Empresa do Lead.</errorMessage>
+</ValidationRule>

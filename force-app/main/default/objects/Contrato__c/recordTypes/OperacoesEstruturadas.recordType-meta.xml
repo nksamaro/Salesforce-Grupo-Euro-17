@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OperacoesEstruturadas</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>ContratoLayoutCompacto</compactLayoutAssignment>
+    <label>Operações estruturadas</label>
+    <picklistValues>
+        <picklist>Especie__c</picklist>
+        <values>
+            <fullName>Subordinada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Forma__c</picklist>
+        <values>
+            <fullName>Normativa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Garantia__c</picklist>
+        <values>
+            <fullName>Aval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cartão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devedor solidário</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicatas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estoque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imóvel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recebíveis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veículo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo__c</picklist>
+        <values>
+            <fullName>Alteração de proposta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dados incorretos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desistência do cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erro de preenchimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferência não realizada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nacionalidade__c</picklist>
+        <values>
+            <fullName>Brasileira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estrangeira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não residente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OpcaoRemuneracaoLiquidaMensal__c</picklist>
+        <values>
+            <fullName>Não opto pela remuneração líquida mensal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opto pela remuneração líquida mensal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opto pela remuneração líquida mensal com uma fração do valor integralizado%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OrgaoEmissor__c</picklist>
+        <values>
+            <fullName>ABNC - Academia Brasileira de Neurocirurgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGU - Advocacia-Geral da União</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANAC - Agência Nacional de Aviação Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAER - Clube de Aeronáutica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAU - Conselho de Arquitetura e Urbanismo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBM - Corpo de Bombeiro Militar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFA - Conselho Federal Administração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFB - Conselho Federal de Biblioteconomia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFBIO - Conselho Federal de Biologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFBM - Conselho Federal de Biomedicina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFC - Conselho Federal de Contabilidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFESS - Conselho Federal de Serviço Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFF - Conselho Regional de Farmácia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFFA - Conselho Federal de Fonoaudiologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFM - Conselho Federal de Medicina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFMV - Conselho Federal de Medicina Veterinária</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFN - Conselho Federal de Nutrição</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFO - Conselho Federal de Odontologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFP - Conselho Federal de Psicologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFQ - Conselho Regional de Química</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFT - Conselho Federal dos Técnicos Industriais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFTA - Conselho Federal dos Técnicos Agrícolas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CGPI - Coordenação Geral de Privilégios e Imunidades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CGPMAF - Coordenadoria Geral de Polícia Marítima%2C Aeronáutica e de Fronteiras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIPC - Centro de Inteligência da Polícia Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNIG - Conselho Nacional de Imigração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNT - Confederação Nacional do Transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNTV - Confederação Nacional de Vigilantes %26 Prestadores de Serviços</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFECI - Conselho Federal de Corretores de Imóveis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFECON - Conselho Federal de Economia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFEM - Conselho Federal de Museologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFEN - Conselho Federal de Enfermagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFFITO - Conselho Regional de Fisioterapia e Terapia Ocupacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMAER - Comando da Aeronáutica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFE - Conselho Federal de Estatística</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFEA - Conselho Federal de Engenharia e Agronomia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFEF - Conselho Federal de Educação Física</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFERE - Conselho Federal dos Representantes Comerciais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONRE - Conselho Regional de Estatística</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONRERP - Conselho Federal de Profissionais de Relações Públicas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CORE - Conselho Regional dos Representantes Comerciais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CORECON - Conselho Regional de Economia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COREM - Conselho Regional de Museologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COREN - Conselho Regional de Enfermagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRA - Conselho Regional de Administração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRAS - Centro de Referência de Assistência Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRB - Conselho Regional de Biblioteconomia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRBIO - Conselho Regional de Biologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRBM - Conselho Regional de Biomedicina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRC - Conselho Regional de Contabilidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CREA - Conselho Regional de Engenharia e Agronomia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRECI - Conselho Regional de Corretores de Imóveis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CREF - Conselho Regional de Educação Física</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CREFITO - Conselho Regional de Fisioterapia e Terapia Ocupacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRESS - Conselho Regional de Serviço Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRF - Conselho Regional de Farmácia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRFA - Conselho Regional de Fonoaudiologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRM - Conselho Regional de Medicina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRMV - Conselho Regional de Medicina Veterinária</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRN - Conselho Regional de Nutrição</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRO - Conselho Regional de Odontologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRP - Conselho Regional de Psicologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRPRE - Conselho Regional de Profissionais de Relações Públicas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRQ - Conselho Regional de Química</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRT - Conselho Regional dos Técnicos Industriais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRTA - Conselho Regional de Técnicos de Administração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTPS - Carteira de Trabalho e Previdência Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CV - Cartório Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DELEMIG - Delegacia de Polícia de Imigração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DETRAN - Departamento Estadual de Trânsito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGPC - Diretoria Geral da Polícia Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIC - Diretoria de Identificação Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DICC - Diretoria de Identificação Civil e Criminal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIREX - Diretoria Executiva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPF - Departamento de Polícia Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPMAF - Divisão de Polícia Marítima%2C Aérea e de Fronteiras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPT - Departamento de Polícia Técnica Geral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPTC - Departamento de Polícia Técnico Científica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DREX - Delegacia Regional Executiva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRT - Delegacia Regional do Trabalho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EB - Exército Brasileiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAB - Força Aérea Brasileira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FENAJ - Federação Nacional dos Jornalistas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FGTS - Fundo de Garantia do Tempo de Serviço</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FIPE - Fundação Instituto de Pesquisas Econômicas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLS - Fundação Lyndolpho Silva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FUNAI - Fundação Nacional do Índio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEJSP - Gerência de Estado de Justiça%2C Segurança Pública e Cidadania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEJSPC - Gerência de Estado de Justiça%2C Segurança Pública e Cidadania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEJUSPC - Gerência de Estado de Justiça%2C Segurança Pública e Cidadania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GESP - Gerência de Estado de Segurança Pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GOVGO - Governo do Estado de Goiás</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I CLA - Carteira de Identidade Classista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICP - Instituto de Polícia Científica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDAMP - Instituto de Identificação Dr%2E Aroldo Mendes Paiva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IFP - Instituto Félix Pacheco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IGP - Instituto Geral de Perícias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIACM - Instituto de Identificação Aderson Conceição de Melo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IICC - Instituto de Identificação Civil e Criminal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IICCECF - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IICM - Instituto de Identificação Carlos Menezes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIGP - Instituto de Identificação Gonçalo Pereira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIJDM - Instituto de Identificação João de Deus Martins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIPC - Instituto de Identificação Pedro Mello</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIPC - Instituto de Identificação da Polícia Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIRGD - Instituto de Identificação Ricardo Gumbleton Daunt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIRHM - Instituto de Identificação Raimundo Hermínio de Melo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IITB - Instituto de Identificação Tavares Buril</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IML - Instituto Médico-Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INI - Instituto Nacional de Identificação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPF - Instituto Pereira Faustino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITCP - Instituto Técnico-Científico de Perícia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITEP - Instituto Técnico-Científico de Perícia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAER - Ministério da Aeronáutica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MB - Marinha do Brasil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD - Ministério da Defesa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDS - Ministério da Cidadania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEC - Ministério da Educação e Cultura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEX - Ministério do Exército</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINDEF - Ministério da Defesa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MJ - Ministério da Justiça</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MM - Ministério da Marinha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MMA - Ministério da Marinha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MPAS - Ministério da Previdência e Assistência Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MPE - Ministério Público Estadual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MPF - Ministério Público Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MPT - Ministério Público do Trabalho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRE - Ministério das Relações Exteriores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT - Ministério do Trabalho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTE - Ministério da Economia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTPS - Ministério do Trabalho e Previdência Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NUMIG - Núcleo de Polícia de Imigração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAB - Ordem dos Advogados do Brasil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMB - Ordens dos Músicos do Brasil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC - Polícia Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PF - Polícia Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PGFN - Procuradoria Geral da Fazenda Nacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM - Polícia Militar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POLITEC - Perícia Oficial e Identificação Técnica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRF - Polícia Rodoviária Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTC - Polícia Tecnico-Científica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCC - Secretaria de Estado da Casa Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCJDS - Secretaria Coordenadora de Justiça e Defesa Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDS - Secretaria de Defesa Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECC - Secretaria de Estado da Casa Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECCDE - Secretaria de Estado da Casa Civil e Desenvolvimento Econômico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEDS - Secretaria de Estado da Defesa Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEGUP - Secretaria de Estado da Segurança Pública e da Defesa Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEJSP - Secretaria de Estado de Justiça e Segurança Pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEJUC - Secretaria de Estado da Justica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEJUSP - Secretaria de Estado de Justiça e Segurança Pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEPC - Secretaria de Estado da Polícia Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SES - Secretaria de Estado da Segurança</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SESC - Secretaria de Estado da Segurança e Cidadania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SESDC - Secretaria de Estado da Segurança%2C Defesa e Cidadania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SESDEC - Secretaria de Estado da Segurança%2C Defesa e Cidadania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SESEG - Secretaria Estadual de Segurança</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SESP - Secretaria de Estado da Segurança Pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SESPAP - Secretaria de Estado da Segurança Pública e Administração Penitenciária</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SESPDC - Secretaria de Estado de Segurança Publica e Defesa do Cidadão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SESPDS - Secretaria de Estado de Segurança Pública e Defesa Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGPC - Superintendência Geral de Polícia Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGPJ - Superintendência Geral de Polícia Judiciária</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIM - Serviço de Identificação da Marinha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SJ - Secretaria da Justiça</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SJCDH - Secretaria da Justiça e dos Direitos Humanos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SJDS - Secretaria Coordenadora de Justiça e Defesa Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SJS - Secretaria da Justiça e Segurança</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SJTC - Secretaria da Justiça do Trabalho e Cidadania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SJTS - Secretaria da Justiça do Trabalho e Segurança</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNJ - Secretaria Nacional de Justiça %2F Departamento de Estrangeiros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPMAF - Serviço de Polícia Marítima%2C Aérea e de Fronteiras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPTC - Secretaria de Polícia Técnico-Científica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SRDPF - Superintendência Regional do Departamento de Polícia Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SRF - Receita Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SRTE - Superintendência Regional do Trabalho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSDC - Secretaria da Segurança%2C Defesa e Cidadania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSDS - Secretaria da Segurança e da Defesa Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSI - Secretaria de Segurança e Informações</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSP - Secretaria de Segurança Pública</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSPCGP - Secretaria de Segurança Pública e Coordenadoria Geral de Perícias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSPDC - Secretaria de Segurança Pública e Defesa do Cidadão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSPDS - Secretaria de Segurança Pública e Defesa Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSPPC - Secretaria de Segurança Pública Polícia Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUSEP - Superintendência de Seguros Privados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUSEPE - Superintendência dos Serviços Penitenciários</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TJ - Tribunal de Justiça</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TJAEM - Tribunal Arbitral e Mediação dos Estados Brasileiros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRE - Tribunal Regional Eleitoral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRF - Tribunal Regional Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TSE - Tribunal Superior Eleitoral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXX - Orgão Estrangeiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZZ - Outro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Periodo__c</picklist>
+        <values>
+            <fullName>Anual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PMT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semestral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trimestral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resgate__c</picklist>
+        <values>
+            <fullName>Parcial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Somente rendimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Total</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Serie__c</picklist>
+        <values>
+            <fullName>10ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8ª</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9ª</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatusContrato__c</picklist>
+        <values>
+            <fullName>Ativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquidado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Aguardando elaboração</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Contrato Assinado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrato Enviado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declinado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elaboração de contrato</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoContrato__c</picklist>
+        <values>
+            <fullName>Empréstimo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novo aporte</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TransferenciaRealizada__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oportunidades_Investimento</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>DataAporte__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Team</filterScope>
+    <label>Oportunidades Investimento</label>
+    <sharedTo>
+        <roleAndSubordinates>ExecutivoInvestimentos</roleAndSubordinates>
+    </sharedTo>
+</ListView>

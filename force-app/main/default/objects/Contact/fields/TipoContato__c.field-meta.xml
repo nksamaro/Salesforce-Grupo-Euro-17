@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipoContato__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Tipo do contato</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contato direto</fullName>
+                <default>false</default>
+                <label>Contato direto</label>
+            </value>
+            <value>
+                <fullName>Representante financeiro</fullName>
+                <default>false</default>
+                <label>Representante financeiro</label>
+            </value>
+            <value>
+                <fullName>Representante legal</fullName>
+                <default>false</default>
+                <label>Representante legal</label>
+            </value>
+            <value>
+                <fullName>Sócio</fullName>
+                <default>false</default>
+                <label>Sócio</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

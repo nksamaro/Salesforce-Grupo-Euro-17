@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parceiro</fullName>
+    <active>true</active>
+    <description>Tipo de registro criado para cadastrar parceiros (PF e PJ)</description>
+    <label>Parceiro</label>
+</RecordType>

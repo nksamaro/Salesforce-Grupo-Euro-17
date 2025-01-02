@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipoRendaComplementar__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Tipo Renda Complementar</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pro-labore</fullName>
+                <default>false</default>
+                <label>Pro-labore</label>
+            </value>
+            <value>
+                <fullName>Aluguel</fullName>
+                <default>false</default>
+                <label>Aluguel</label>
+            </value>
+            <value>
+                <fullName>Relação de faturamento</fullName>
+                <default>false</default>
+                <label>Relação de faturamento</label>
+            </value>
+            <value>
+                <fullName>Extrato</fullName>
+                <default>false</default>
+                <label>Extrato</label>
+            </value>
+            <value>
+                <fullName>IRPF</fullName>
+                <default>false</default>
+                <label>IRPF</label>
+            </value>
+            <value>
+                <fullName>IRPJ</fullName>
+                <default>false</default>
+                <label>IRPJ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

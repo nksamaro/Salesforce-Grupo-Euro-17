@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Informar o motivo do contrato não dar segmento.</inlineHelpText>
+    <label>Motivo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Alteração de proposta</fullName>
+                <default>false</default>
+                <label>Alteração de proposta</label>
+            </value>
+            <value>
+                <fullName>Dados incorretos</fullName>
+                <default>false</default>
+                <label>Dados incorretos</label>
+            </value>
+            <value>
+                <fullName>Desistência do cliente</fullName>
+                <default>false</default>
+                <label>Desistência do cliente</label>
+            </value>
+            <value>
+                <fullName>Erro de preenchimento</fullName>
+                <default>false</default>
+                <label>Erro de preenchimento</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>Transferência não realizada</fullName>
+                <default>false</default>
+                <label>Transferência não realizada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

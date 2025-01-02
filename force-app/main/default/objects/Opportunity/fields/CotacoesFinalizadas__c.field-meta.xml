@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CotacoesFinalizadas__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Cotações finalizadas</label>
+    <summaryFilterItems>
+        <field>Quote.Status</field>
+        <operation>equals</operation>
+        <value>Contratado</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Quote.NProposta__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>Quote.OpportunityId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

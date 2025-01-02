@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaPlaca</fullName>
+    <active>true</active>
+    <description>Valida se a placa está preenchida quando o produto é empréstimo com garantia de veículo pesado.</description>
+    <errorConditionFormula>AND(ProdutoNegociar__r.Name == &apos;EMPRESTIMO C/ GAR. VEIC.PESADO&apos;,
+ISBLANK(Placa__c)
+)</errorConditionFormula>
+    <errorMessage>Para Empréstimo com veículo pesado em garantia é necessário o preenchimento do campo Placa.</errorMessage>
+</ValidationRule>

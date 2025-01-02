@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GarantiaProdutoCapitalGiro</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+     Produto__r.Name != &apos;CAPITAL DE GIRO&apos;,
+    OR(
+     ISPICKVAL(Garantia__c, &apos;Aval&apos;),
+     ISPICKVAL(Garantia__c,&apos;Cartão&apos;),
+     ISPICKVAL(Garantia__c,&apos;Contrato&apos;),
+     ISPICKVAL(Garantia__c,&apos;Devedor solidário&apos;),
+     ISPICKVAL(Garantia__c,&apos;Estoque&apos;),
+     ISPICKVAL(Garantia__c,&apos;Imóvel&apos;),
+     ISPICKVAL(Garantia__c,&apos;Recebíveis&apos;),
+     ISPICKVAL(Garantia__c,&apos;Investimento&apos;),
+     ISPICKVAL(Garantia__c,&apos;Veículo&apos;)
+))</errorConditionFormula>
+    <errorDisplayField>Garantia__c</errorDisplayField>
+    <errorMessage>As garantias relacionadas abaixo só podem ser atreladas ao produto Capital de giro:
+Aval, Cartão, Contrato, Devedor solidário, Estoque, Imóvel, Recebíveis, Investimento,Veículo.</errorMessage>
+</ValidationRule>

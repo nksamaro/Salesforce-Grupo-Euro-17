@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnidadeNegocio__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Unidade de negócio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Investimentos</fullName>
+                <default>false</default>
+                <label>Investimentos</label>
+            </value>
+            <value>
+                <fullName>Operações estruturadas</fullName>
+                <default>false</default>
+                <label>Operações estruturadas</label>
+            </value>
+            <value>
+                <fullName>Produtos financeiros - Imóveis</fullName>
+                <default>false</default>
+                <label>Produtos financeiros - Imóveis</label>
+            </value>
+            <value>
+                <fullName>Produtos financeiros - Veículos</fullName>
+                <default>false</default>
+                <label>Produtos financeiros - Veículos</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

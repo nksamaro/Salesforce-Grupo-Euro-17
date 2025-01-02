@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaPlacaRestricao</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ProdutoNegociar__r.Name == &apos;EMPRESTIMO C/GARANTIA VEICULOS&apos;,
+OR(ISBLANK(Placa__c),
+ ISPICKVAL(Restricao__c, &apos;&apos;)))</errorConditionFormula>
+    <errorMessage>Para Empréstimo com veículo em garantia é necessário o preenchimento dos campos Placa e Restrição.</errorMessage>
+</ValidationRule>

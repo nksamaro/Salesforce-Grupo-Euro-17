@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Produtos Financeiros - Veículos</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Aguardando cliente</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Análise jurídica</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Aprovado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contrato pago</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Parecer do crédito</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Perdido</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Reprovado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Simulação</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

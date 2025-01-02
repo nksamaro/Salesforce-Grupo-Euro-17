@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContratosOpEstruturadasEmaberto</fullName>
+    <columns>NAME</columns>
+    <columns>NumeroProposta__c</columns>
+    <columns>Oportunidade__c</columns>
+    <columns>Conta__c</columns>
+    <columns>Produto__c</columns>
+    <columns>PrazoContrato__c</columns>
+    <columns>DataInicioContrato__c</columns>
+    <columns>DataFimContrato__c</columns>
+    <columns>Status__c</columns>
+    <columns>ValorContrato__c</columns>
+    <columns>Responsavel__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contrato__c.OperacoesEstruturadas</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Declinado,Contrato Assinado</value>
+    </filters>
+    <label>Contratos Op Estruturadas - Em aberto</label>
+    <sharedTo>
+        <group>Compliance</group>
+        <group>Credito</group>
+    </sharedTo>
+</ListView>

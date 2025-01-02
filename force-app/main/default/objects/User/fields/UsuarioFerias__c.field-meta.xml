@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UsuarioFerias__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>AND(TODAY() &gt;= InicioFerias__c, TODAY() &lt;= FimFerias__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Usuário em férias</label>
+    <type>Checkbox</type>
+</CustomField>

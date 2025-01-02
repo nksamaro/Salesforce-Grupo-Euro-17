@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NomeDaConta__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Busca na oportunidade pelo nome da conta</description>
+    <externalId>false</externalId>
+    <formula>BLANKVALUE(Parecer__r.Oportunidade__r.Account.Name, Parecer__r.Oportunidade__r.Account.FirstName  + &apos; &apos; + Parecer__r.Oportunidade__r.Account.MiddleName + &apos; &apos; +
+Parecer__r.Oportunidade__r.Account.LastName )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nome da Conta</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

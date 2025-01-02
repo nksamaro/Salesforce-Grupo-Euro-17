@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rascunho</fullName>
+                <default>false</default>
+                <label>Rascunho</label>
+            </value>
+            <value>
+                <fullName>Em análise</fullName>
+                <default>false</default>
+                <label>Em análise</label>
+            </value>
+            <value>
+                <fullName>Devolvido</fullName>
+                <default>false</default>
+                <label>Devolvido</label>
+            </value>
+            <value>
+                <fullName>Aprovado Comitê</fullName>
+                <default>false</default>
+                <label>Aprovado Comitê</label>
+            </value>
+            <value>
+                <fullName>Aprovado Crédito</fullName>
+                <default>false</default>
+                <label>Aprovado Crédito</label>
+            </value>
+            <value>
+                <fullName>Aprovado VP</fullName>
+                <default>false</default>
+                <label>Aprovado VP</label>
+            </value>
+            <value>
+                <fullName>Aprovado com ressalva</fullName>
+                <default>false</default>
+                <label>Aprovado com ressalva</label>
+            </value>
+            <value>
+                <fullName>Reprovado</fullName>
+                <default>false</default>
+                <label>Reprovado</label>
+            </value>
+            <value>
+                <fullName>Aprovado</fullName>
+                <default>false</default>
+                <label>Aprovado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

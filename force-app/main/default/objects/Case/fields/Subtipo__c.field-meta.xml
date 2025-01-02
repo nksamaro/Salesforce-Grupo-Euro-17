@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtipo__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Subtipo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inclusão</fullName>
+                <default>false</default>
+                <label>Inclusão</label>
+            </value>
+            <value>
+                <fullName>Exclusão</fullName>
+                <default>false</default>
+                <label>Exclusão</label>
+            </value>
+            <value>
+                <fullName>Relatório/Painel</fullName>
+                <default>false</default>
+                <label>Relatório/Painel</label>
+            </value>
+            <value>
+                <fullName>Acesso ao Salesforce</fullName>
+                <default>false</default>
+                <label>Acesso ao Salesforce</label>
+            </value>
+            <value>
+                <fullName>Cadastro em geral</fullName>
+                <default>false</default>
+                <label>Cadastro em geral</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>Resete de senha</fullName>
+                <default>false</default>
+                <label>Resete de senha</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Relatório/Painel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Acesso ao Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Cadastro em geral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Outros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Resete de senha</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

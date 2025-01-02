@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validaDocumento</fullName>
+    <active>true</active>
+    <description>Esta regra valida se o documento contém caracteres especiais</description>
+    <errorConditionFormula>CONTAINS(Documento__c, &quot;.&quot;) || CONTAINS(Documento__c, &quot;-&quot;) || CONTAINS(Documento__c, &quot;/&quot;)</errorConditionFormula>
+    <errorDisplayField>Documento__c</errorDisplayField>
+    <errorMessage>O campo documento não deve conter caracteres especiais.</errorMessage>
+</ValidationRule>

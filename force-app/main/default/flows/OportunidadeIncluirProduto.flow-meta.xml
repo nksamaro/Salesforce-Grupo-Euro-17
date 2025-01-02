@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <name>AtribuirFilialOwnerLead</name>
+        <label>Atribuir Filial do Owner do Lead</label>
+        <locationX>1535</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>IdsFiliais</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LoopFiliaisRepresentanteLead.Filial__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>LoopFiliaisRepresentanteLead</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AtribuirFilialOwnerOportunidade</name>
+        <label>Atribuir Filial do Owner da Oportunidade</label>
+        <locationX>1183</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>IdsFiliais</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LoopFiliaisRepresentanteOportunidade.Filial__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>LoopFiliaisRepresentanteOportunidade</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Anual</name>
+        <choiceText>Anual</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Final</name>
+        <choiceText>Final</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Final</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Capital de giro, As garantias relacionadas ao produto Capital de giro,  só podem ser  : 
+
+Aval, 
+
+Cartão, 
+
+Contrato, 
+
+Devedor solidário, 
+
+Estoque, 
+
+Imóvel, 
+
+Recebíveis, 
+
+Investimento,
+
+Veículo.</description>
+        <name>Garantia_Aval</name>
+        <choiceText>Aval</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Aval</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Capital de giro, As garantias relacionadas ao produto Capital de giro,  só podem ser  : 
+
+Aval, 
+
+Cartão, 
+
+Contrato, 
+
+Devedor solidário, 
+
+Estoque, 
+
+Imóvel, 
+
+Recebíveis, 
+
+Investimento,
+
+Veículo.</description>
+        <name>Garantia_Cartao</name>
+        <choiceText>Cartão</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cartão</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Capital de giro, As garantias relacionadas ao produto Capital de giro,  só podem ser  : 
+
+Aval, 
+
+Cartão, 
+
+Contrato, 
+
+Devedor solidário, 
+
+Estoque, 
+
+Imóvel, 
+
+Recebíveis, 
+
+Investimento,
+
+Veículo.</description>
+        <name>Garantia_Contrato</name>
+        <choiceText>Contrato</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Contrato</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Capital de giro, As garantias relacionadas ao produto Capital de giro,  só podem ser  : 
+
+Aval, 
+
+Cartão, 
+
+Contrato, 
+
+Devedor solidário, 
+
+Estoque, 
+
+Imóvel, 
+
+Recebíveis, 
+
+Investimento,
+
+Veículo.</description>
+        <name>Garantia_DevedorSolidario</name>
+        <choiceText>Devedor Solidário</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Devedor Solidário</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Desconto, As garantias relacionadas ao produto Desconto,  só podem ser  : 
+
+Duplicata
+
+Outros</description>
+        <name>Garantia_Duplicata</name>
+        <choiceText>Duplicata</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Duplicata</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Capital de giro, As garantias relacionadas ao produto Capital de giro,  só podem ser  : 
+
+Aval, 
+
+Cartão, 
+
+Contrato, 
+
+Devedor solidário, 
+
+Estoque, 
+
+Imóvel, 
+
+Recebíveis, 
+
+Investimento,
+
+Veículo.</description>
+        <name>Garantia_Estoque</name>
+        <choiceText>Estoque</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Estoque</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Capital de giro, As garantias relacionadas ao produto Capital de giro,  só podem ser  : 
+
+Aval, 
+
+Cartão, 
+
+Contrato, 
+
+Devedor solidário, 
+
+Estoque, 
+
+Imóvel, 
+
+Recebíveis, 
+
+Investimento,
+
+Veículo.</description>
+        <name>Garantia_Imovel</name>
+        <choiceText>Imóvel</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Imóvel</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Capital de giro, As garantias relacionadas ao produto Capital de giro,  só podem ser  : 
+
+Aval, 
+
+Cartão, 
+
+Contrato, 
+
+Devedor solidário, 
+
+Estoque, 
+
+Imóvel, 
+
+Recebíveis, 
+
+Investimento,
+
+Veículo.</description>
+        <name>Garantia_Investimentos</name>
+        <choiceText>Investimento</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Investimento</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Desconto, As garantias relacionadas ao produto Desconto,  só podem ser  : 
+
+Duplicata
+
+Outros</description>
+        <name>Garantia_Outros</name>
+        <choiceText>Outros</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Outros</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Capital de giro, As garantias relacionadas ao produto Capital de giro,  só podem ser  : 
+
+Aval, 
+
+Cartão, 
+
+Contrato, 
+
+Devedor solidário, 
+
+Estoque, 
+
+Imóvel, 
+
+Recebíveis, 
+
+Investimento,
+
+Veículo.</description>
+        <name>Garantia_Recebiveis</name>
+        <choiceText>Recebíveis</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Recebíveis</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Quando escolher Capital de giro, As garantias relacionadas ao produto Capital de giro,  só podem ser  : 
+
+Aval, 
+
+Cartão, 
+
+Contrato, 
+
+Devedor solidário, 
+
+Estoque, 
+
+Imóvel, 
+
+Recebíveis, 
+
+Investimento,
+
+Veículo.</description>
+        <name>Garantia_Veiculos</name>
+        <choiceText>Veículo</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Veículo</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Mensal</name>
+        <choiceText>Mensal</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Mensal</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Nao</name>
+        <choiceText>Não</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Não</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>PMT</name>
+        <choiceText>PMT</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>PMT</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Sim</name>
+        <choiceText>Sim</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Sim</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>VerificacaoProdutoEuroPrimeSecuritizadoraOportunidade</name>
+        <label>Verificação Produto Euro Prime Securitizadora Oportunidade</label>
+        <locationX>182</locationX>
+        <locationY>1598</locationY>
+        <defaultConnector>
+            <targetReference>AtualizarOportunidadeInvestimentos</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Resultado padrão</defaultConnectorLabel>
+        <rules>
+            <name>CriteriosProdutoEuroPrimeSecuritizadoraOportunidade</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ProdutosTable.firstSelectedRow.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EURO PRIME SECURITIZADORA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PrazoOperacaoOportunidade</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ProdutoComQuantidadeMinimaPrazoOportunidade</targetReference>
+            </connector>
+            <label>Criterios do Produto Euro Prime Securitizadora Oportunidade</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>VerificaoProdutoEuroPrimeSecuritizadoraLead</name>
+        <label>Verificação Produto Euro Prime Securitizadora Lead</label>
+        <locationX>710</locationX>
+        <locationY>1598</locationY>
+        <defaultConnector>
+            <targetReference>AtualizarLeadInvestimentos</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Resultado padrão</defaultConnectorLabel>
+        <rules>
+            <name>CriteriosProdutoEuroPrimeSecuritizadoraLead</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ProdutosTable.firstSelectedRow.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EURO PRIME SECURITIZADORA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>PrazoOperacaoLead</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ProdutoComQuantidadeMinimaPrazoLead</targetReference>
+            </connector>
+            <label>Criterios do Produto Euro Prime Securitizadora Lead</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>VerificaRelacionamentoProdutoFilial</name>
+        <label>Verifica relacionamento Produto Filial</label>
+        <locationX>1403</locationX>
+        <locationY>1274</locationY>
+        <defaultConnector>
+            <targetReference>ProdutoNaoRelacionadoFilial</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Resultado padrão</defaultConnectorLabel>
+        <rules>
+            <name>ExisteProdutoRelacionadoFilialProprietario</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ObterCodigosProtheusProdutoFiliais</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>VerificaTipoObjetoAtualizacao</targetReference>
+            </connector>
+            <label>Existe Produto relacionado a Filial do Proprietário</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>VerificaTipoObjeto</name>
+        <label>Verificação tipo Objeto</label>
+        <locationX>1403</locationX>
+        <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>BuscarProduto</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Resultado padrão</defaultConnectorLabel>
+        <rules>
+            <name>Oportunidade</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>006</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetOportunidade</targetReference>
+            </connector>
+            <label>Oportunidade</label>
+        </rules>
+        <rules>
+            <name>Lead</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>00Q</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetLead</targetReference>
+            </connector>
+            <label>Lead</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>VerificaTipoObjetoAtualizacao</name>
+        <label>Verificação tipo Objeto para Atualização</label>
+        <locationX>908</locationX>
+        <locationY>1382</locationY>
+        <defaultConnectorLabel>Resultado padrão</defaultConnectorLabel>
+        <rules>
+            <name>OportunidadeInvestimentos</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>006</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GetOportunidade.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Investimentos</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>DefinirQuantidadePrazoOperacaoOportunidade</targetReference>
+            </connector>
+            <label>Oportunidade Investimentos</label>
+        </rules>
+        <rules>
+            <name>LeadInvestimentos</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>00Q</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GetLead.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Investimentos</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>DefinirQuantidadePrazoOperacaoLead</targetReference>
+            </connector>
+            <label>Lead Investimentos</label>
+        </rules>
+        <rules>
+            <name>OportunidadeAtualizar</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>006</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AtualizarOportunidade</targetReference>
+            </connector>
+            <label>Oportunidade para Atualizar</label>
+        </rules>
+        <rules>
+            <name>LeadAtualizar</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>00Q</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AtualizarLead</targetReference>
+            </connector>
+            <label>Lead para Atualizar</label>
+        </rules>
+    </decisions>
+    <description>582 - [Oportunidade] - Alteração de aprovação de taxas</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Garantia_Escolhida</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!Garantias_CapitalGiro}) &amp;&amp; ISBLANK({!Garantias_Desconto}), &apos;&apos;,
+    IF(ISBLANK({!Garantias_CapitalGiro}), {!Garantias_Desconto}, {!Garantias_CapitalGiro})
+)</expression>
+    </formulas>
+    <interviewLabel>[Oportunidade] - Incluir Produto {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>[Oportunidade] - Incluir Produto</label>
+    <loops>
+        <name>LoopFiliaisRepresentanteLead</name>
+        <label>Loop Filiais Representante - Lead</label>
+        <locationX>1447</locationX>
+        <locationY>458</locationY>
+        <collectionReference>ObterCodigosProtheusRepresentanteLead</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AtribuirFilialOwnerLead</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>BuscarProduto</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>LoopFiliaisRepresentanteOportunidade</name>
+        <label>Loop Filiais Representante - Oportunidade</label>
+        <locationX>1095</locationX>
+        <locationY>458</locationY>
+        <collectionReference>ObterCodigosProtheusRepresentanteOportunidade</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AtribuirFilialOwnerOportunidade</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>BuscarProduto</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>GetLead</name>
+        <label>Get Lead</label>
+        <locationX>1447</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ObterCodigosProtheusRepresentanteLead</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Lead</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetOportunidade</name>
+        <label>Get Oportunidade</label>
+        <locationX>1095</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ObterCodigosProtheusRepresentanteOportunidade</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>GetProduto</name>
+        <label>Get Produto</label>
+        <locationX>1403</locationX>
+        <locationY>950</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SelecionarProduto</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <elementReference>ParametroBuscaProduto</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Product2</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>ObterCodigosProtheusProdutoFiliais</name>
+        <label>Obter Códigos Protheus Produto - Filiais</label>
+        <locationX>1403</locationX>
+        <locationY>1166</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>VerificaRelacionamentoProdutoFilial</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Produto__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ProdutosTable.firstSelectedRow.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Filial__c</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>IdsFiliais</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Ativo__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>CodigoProtheus__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>ObterCodigosProtheusRepresentanteLead</name>
+        <label>Obter Códigos Protheus Representante - Lead</label>
+        <locationX>1447</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>LoopFiliaisRepresentanteLead</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Representante__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetLead.OwnerId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Ativo__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>CodigoProtheus__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>ObterCodigosProtheusRepresentanteOportunidade</name>
+        <label>Obter Códigos Protheus Representante - Oportunidade</label>
+        <locationX>1095</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>LoopFiliaisRepresentanteOportunidade</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Representante__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetOportunidade.OwnerId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Ativo__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>CodigoProtheus__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>AtualizarLead</name>
+        <label>Atualizar Lead</label>
+        <locationX>1370</locationX>
+        <locationY>1490</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ProdutoNegociar__c</field>
+            <value>
+                <elementReference>ProdutosTable.firstSelectedRow.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>AtualizarLeadInvestimentos</name>
+        <label>Atualizar Lead de Investimentos</label>
+        <locationX>842</locationX>
+        <locationY>1706</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Comissionado__c</field>
+            <value>
+                <elementReference>ComissionadoLead</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DataFimContrato__c</field>
+            <value>
+                <elementReference>DataFimdContrato</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DataPrevistaAporte__c</field>
+            <value>
+                <elementReference>DataPrevistaAporte</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Periodo__c</field>
+            <value>
+                <elementReference>PeriodoLead</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PrazoOperacao__c</field>
+            <value>
+                <elementReference>PrazoOperacaoLead</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ProdutoNegociar__c</field>
+            <value>
+                <elementReference>ProdutosTable.firstSelectedRow.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Quantidade__c</field>
+            <value>
+                <elementReference>QuantidadeLead</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Taxa__c</field>
+            <value>
+                <elementReference>Taxa</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>AtualizarOportunidade</name>
+        <label>Atualizar Oportunidade</label>
+        <locationX>1106</locationX>
+        <locationY>1490</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Garantia__c</field>
+            <value>
+                <elementReference>Garantia_Escolhida</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Produto__c</field>
+            <value>
+                <elementReference>ProdutosTable.firstSelectedRow.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>AtualizarOportunidadeInvestimentos</name>
+        <label>Atualizar Oportunidade de Investimentos</label>
+        <locationX>314</locationX>
+        <locationY>1706</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Comissionado__c</field>
+            <value>
+                <elementReference>Comissionado</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DataAporte__c</field>
+            <value>
+                <elementReference>DataAporte</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DataFimContrato__c</field>
+            <value>
+                <elementReference>DataFimContrato</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Periodo__c</field>
+            <value>
+                <elementReference>PeriodoOportunidade</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PrazoOperacao__c</field>
+            <value>
+                <elementReference>PrazoOperacaoOportunidade</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Produto__c</field>
+            <value>
+                <elementReference>ProdutosTable.firstSelectedRow.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Quantidade__c</field>
+            <value>
+                <elementReference>QuantidadeOportunidade</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Taxa__c</field>
+            <value>
+                <elementReference>TaxaOportunidade</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <screens>
+        <name>BuscarProduto</name>
+        <label>Buscar Produto</label>
+        <locationX>1403</locationX>
+        <locationY>842</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>GetProduto</targetReference>
+        </connector>
+        <fields>
+            <name>ParametroBuscaProduto</name>
+            <dataType>String</dataType>
+            <fieldText>Digite o nome do Produto</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>DefinirQuantidadePrazoOperacaoLead</name>
+        <label>Definir quantidade e prazo da operação Lead</label>
+        <locationX>710</locationX>
+        <locationY>1490</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>VerificaoProdutoEuroPrimeSecuritizadoraLead</targetReference>
+        </connector>
+        <fields>
+            <name>TextoDefinirQuantidadePrazoOperacao</name>
+            <fieldText>&lt;p&gt;Favor informar a Quantidade e o Prazo da operação.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>QuantidadeLead</name>
+            <dataType>Number</dataType>
+            <fieldText>Quantidade</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>PrazoOperacaoLead</name>
+            <dataType>Number</dataType>
+            <fieldText>Prazo da operação</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>Taxa</name>
+            <dataType>Number</dataType>
+            <fieldText>Taxa</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <scale>1</scale>
+        </fields>
+        <fields>
+            <name>DataPrevistaAporte</name>
+            <dataType>Date</dataType>
+            <fieldText>Data prevista do aporte</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>PeriodoLead</name>
+            <choiceReferences>Mensal</choiceReferences>
+            <choiceReferences>Final</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Período</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>DataFimdContrato</name>
+            <dataType>Date</dataType>
+            <fieldText>Data fim do contrato</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>ComissionadoLead</name>
+            <choiceReferences>Sim</choiceReferences>
+            <choiceReferences>Nao</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Comissionado</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>or</conditionLogic>
+                <conditions>
+                    <leftValueReference>GetLead.Funcionario__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>ProdutosTable.firstSelectedRow.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>SECURITIZADORA FUNCIONARIOS</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>DefinirQuantidadePrazoOperacaoOportunidade</name>
+        <label>Definir quantidade e prazo da operação Oportunidade</label>
+        <locationX>182</locationX>
+        <locationY>1490</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>VerificacaoProdutoEuroPrimeSecuritizadoraOportunidade</targetReference>
+        </connector>
+        <fields>
+            <name>C_pia_1_de_TextoDefinirQuantidadePrazoOperacao</name>
+            <fieldText>&lt;p&gt;Favor informar a Quantidade e o Prazo da operação.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>QuantidadeOportunidade</name>
+            <dataType>Number</dataType>
+            <fieldText>Quantidade</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>PrazoOperacaoOportunidade</name>
+            <dataType>Number</dataType>
+            <fieldText>Prazo da operação</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>TaxaOportunidade</name>
+            <dataType>Number</dataType>
+            <fieldText>Taxa</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <scale>1</scale>
+        </fields>
+        <fields>
+            <name>DataAporte</name>
+            <dataType>Date</dataType>
+            <fieldText>Data do aporte</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>PeriodoOportunidade</name>
+            <choiceReferences>Mensal</choiceReferences>
+            <choiceReferences>Final</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Período</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>DataFimContrato</name>
+            <dataType>Date</dataType>
+            <fieldText>Data fim do contrato</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Comissionado</name>
+            <choiceReferences>Sim</choiceReferences>
+            <choiceReferences>Nao</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Comissionado</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>or</conditionLogic>
+                <conditions>
+                    <leftValueReference>GetOportunidade.Account.Funcionario__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>ProdutosTable.firstSelectedRow.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>SECURITIZADORA FUNCIONARIOS</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>ProdutoComQuantidadeMinimaPrazoLead</name>
+        <label>Produto com quantidade mínima e prazo Lead</label>
+        <locationX>578</locationX>
+        <locationY>1706</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MensagemProdutoEuroPrimeSecLead</name>
+            <fieldText>&lt;p&gt;Para o produto Euro Prime Securitizadora, o prazo mínimo de investimento é de 12 meses . Caso queira realizar um investimento inferior a 12 meses, cadastrar o produto Euro Securitizadora.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>ProdutoComQuantidadeMinimaPrazoOportunidade</name>
+        <label>Produto com quantidade mínima e prazo Oportunidade</label>
+        <locationX>50</locationX>
+        <locationY>1706</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MensagemProdutoEuroPrimeSecOportunidade</name>
+            <fieldText>&lt;p&gt;Para o produto Euro Prime Securitizadora, o prazo mínimo de investimento é de 12 meses . Caso queira realizar um investimento inferior a 12 meses, cadastrar o produto Euro Securitizadora.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>ProdutoNaoRelacionadoFilial</name>
+        <label>Produto não relacionado a Filial</label>
+        <locationX>1898</locationX>
+        <locationY>1382</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MensagemProdutoNaoRelacionadoFilial</name>
+            <fieldText>&lt;p&gt;Você não pode comercializar esse produto uma vez que o mesmo não pertence a mesma empresa que você. Registre um caso e procure o administrador do sistema.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>SelecionarProduto</name>
+        <label>Selecionar Produto</label>
+        <locationX>1403</locationX>
+        <locationY>1058</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>ObterCodigosProtheusProdutoFiliais</targetReference>
+        </connector>
+        <fields>
+            <name>ProdutosTable</name>
+            <dataTypeMappings>
+                <typeName>T</typeName>
+                <typeValue>Product2</typeValue>
+            </dataTypeMappings>
+            <extensionName>flowruntime:datatable</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Produtos</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>selectionMode</name>
+                <value>
+                    <stringValue>SINGLE_SELECT</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>minRowSelection</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>tableData</name>
+                <value>
+                    <elementReference>GetProduto</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>isShowSearchBar</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>maxRowSelection</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>selectedRows</name>
+                <value>
+                    <elementReference>ProdutosTable.selectedRows</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columns</name>
+                <value>
+                    <stringValue>[{&quot;apiName&quot;:&quot;Name&quot;,&quot;guid&quot;:&quot;column-2e94&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:0,&quot;label&quot;:&quot;Nome do produto&quot;,&quot;type&quot;:&quot;text&quot;}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Garantias_CapitalGiro</name>
+            <choiceReferences>Garantia_Aval</choiceReferences>
+            <choiceReferences>Garantia_Cartao</choiceReferences>
+            <choiceReferences>Garantia_Contrato</choiceReferences>
+            <choiceReferences>Garantia_DevedorSolidario</choiceReferences>
+            <choiceReferences>Garantia_Estoque</choiceReferences>
+            <choiceReferences>Garantia_Imovel</choiceReferences>
+            <choiceReferences>Garantia_Investimentos</choiceReferences>
+            <choiceReferences>Garantia_Recebiveis</choiceReferences>
+            <choiceReferences>Garantia_Veiculos</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Garantias</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>1 AND ( 2 OR 3 )</conditionLogic>
+                <conditions>
+                    <leftValueReference>ProdutosTable.firstSelectedRow.Name</leftValueReference>
+                    <operator>Contains</operator>
+                    <rightValue>
+                        <stringValue>CAPITAL</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>GetOportunidade.UnidadeNegocio__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Operações estruturadas</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>GetLead.UnidadeNegocio__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Operações estruturadas</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Garantias_Desconto</name>
+            <choiceReferences>Garantia_Duplicata</choiceReferences>
+            <choiceReferences>Garantia_Outros</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Garantias</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>1 AND ( 2 OR 3 )</conditionLogic>
+                <conditions>
+                    <leftValueReference>ProdutosTable.firstSelectedRow.Name</leftValueReference>
+                    <operator>Contains</operator>
+                    <rightValue>
+                        <stringValue>DESCONTO</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>GetOportunidade.UnidadeNegocio__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Operações estruturadas</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>GetLead.UnidadeNegocio__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Operações estruturadas</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>1277</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>VerificaTipoObjeto</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>IdsFiliais</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

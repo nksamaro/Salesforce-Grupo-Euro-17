@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipos_de_Reinvestimento__c</fullName>
+    <label>Tipos de Reinvestimento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Renovacao__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reinvestimento Integral</fullName>
+                <default>false</default>
+                <label>Reinvestimento Integral</label>
+            </value>
+            <value>
+                <fullName>Reinvestimento Parcial</fullName>
+                <default>false</default>
+                <label>Reinvestimento Parcial</label>
+            </value>
+            <value>
+                <fullName>Reinvestimento com resgate do rendimento</fullName>
+                <default>false</default>
+                <label>Reinvestimento com resgate do rendimento</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Originador__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Originador</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Google</fullName>
+                <default>false</default>
+                <label>Google</label>
+            </value>
+            <value>
+                <fullName>Redes sociais</fullName>
+                <default>false</default>
+                <label>Redes sociais</label>
+            </value>
+            <value>
+                <fullName>Orgânico</fullName>
+                <default>false</default>
+                <label>Orgânico</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

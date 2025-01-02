@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidarCPFCaptacao</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( RecordType.Name = &apos;Captação e investimentos&apos;, Documento__c != null,CONTAINS(Documento__c, &apos;.&apos;), LEN(Documento__c)=14,
+NOT(
+OR(
+LEN(Documento__c)=0,AND(MOD(MOD(11-MOD(
+VALUE(MID(Documento__c,1,1))*10+
+VALUE(MID(Documento__c,2,1))*9+
+VALUE(MID(Documento__c,3,1))*8+
+VALUE(MID(Documento__c,5,1))*7+
+VALUE(MID(Documento__c,6,1))*6+
+VALUE(MID(Documento__c,7,1))*5+
+VALUE(MID(Documento__c,9,1))*4+
+VALUE(MID(Documento__c,10,1))*3+
+VALUE(MID(Documento__c,11,1))*2,11),11),10)=
+VALUE(MID(Documento__c,13,1)),MOD(MOD(11-MOD(
+VALUE(MID(Documento__c,1,1))*11+
+VALUE(MID(Documento__c,2,1))*10+
+VALUE(MID(Documento__c,3,1))*9+
+VALUE(MID(Documento__c,5,1))*8+
+VALUE(MID(Documento__c,6,1))*7+
+VALUE(MID(Documento__c,7,1))*6+
+VALUE(MID(Documento__c,9,1))*5+
+VALUE(MID(Documento__c,10,1))*4+
+VALUE(MID(Documento__c,11,1))*3+
+VALUE(MID(Documento__c,13,1))*2,11),11),10)=
+VALUE(MID(Documento__c,14,1))))))</errorConditionFormula>
+    <errorDisplayField>Documento__c</errorDisplayField>
+    <errorMessage>Para o campo documento, digitar somente um CPF ou CNPJ válido. Não é possível salvar o campo somente com letras ou com uma sequência de mesmo número. Ex: 111111111-11.</errorMessage>
+</ValidationRule>

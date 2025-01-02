@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExigeDataAberturaEmpesaInvestimentos</fullName>
+    <active>true</active>
+    <description>Exige o preenchimento do campo &quot;Data de abertura&quot; na conta relacionada ao contrato para que o status seja atualizado para &quot;Contrato assinado&quot;.</description>
+    <errorConditionFormula>AND(
+				UnidadeNegocio__c = &apos;Investimentos&apos;,
+				ISPICKVAL(Status__c, &apos;Contrato Assinado&apos;),
+			 Conta__r.RecordType.Name = &apos;Empresa&apos;,
+				ISBLANK(Conta__r.DataAbertura__c)
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>A conta relacionada ao contrato não possui Data de abertura preenchida. Preencha a data na conta e realize a alteração do contrato novamente.</errorMessage>
+</ValidationRule>

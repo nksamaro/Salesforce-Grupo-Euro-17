@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <customErrors>
+        <name>ProdutoJaExistente</name>
+        <label>Produto Ja Existente</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <customErrorMessages>
+            <errorMessage>Ja existe um registro com os mesmos dados de Produto, Funcionário e Comissionado.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>VerificaExistenciaProduto</name>
+        <label>Verifica Existência do Produto</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Resultado padrão</defaultConnectorLabel>
+        <rules>
+            <name>ProdutoCadastrado</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>BuscaProduto</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ProdutoJaExistente</targetReference>
+            </connector>
+            <label>Produto Ja Cadastrado</label>
+        </rules>
+    </decisions>
+    <description>Este fluxo valida se ja existe um registro de taxa cadastrada</description>
+    <environments>Default</environments>
+    <interviewLabel>[Cadastro de Taxa] - Before insert/Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>[Cadastro de Taxa] - Before insert/Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>BuscaProduto</name>
+        <label>Busca Produto</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>VerificaExistenciaProduto</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Produto__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Produto__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Funcionario__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Funcionario__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Comissionado__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Comissionado__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CadastroTaxas__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>BuscaProduto</targetReference>
+        </connector>
+        <object>CadastroTaxas__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

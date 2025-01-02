@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PendenciaAnaliseJuridica</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   ISPICKVAL(StageName, &apos;Análise jurídica&apos;),
+ OR(
+   ISPICKVAL(PendenciaComprador__c,&apos;Sim&apos;),
+   ISPICKVAL(PendenciaVendedor__c, &apos;Sim&apos;),
+   ISPICKVAL(PendenciaBem__c, &apos;Sim&apos;)
+ )
+)</errorConditionFormula>
+    <errorMessage>Você não pode prosseguir para próxima fase da oportunidade caso haja pendências.</errorMessage>
+</ValidationRule>

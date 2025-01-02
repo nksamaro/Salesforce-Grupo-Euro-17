@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnidadeNegocio__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Unidade de negócio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Operações estruturadas</fullName>
+                <default>false</default>
+                <label>Operações estruturadas</label>
+            </value>
+            <value>
+                <fullName>Investimentos</fullName>
+                <default>false</default>
+                <label>Investimentos</label>
+            </value>
+            <value>
+                <fullName>Produtos financeiros</fullName>
+                <default>false</default>
+                <label>Produtos financeiros</label>
+            </value>
+            <value>
+                <fullName>Formalização</fullName>
+                <default>false</default>
+                <label>Formalização</label>
+            </value>
+            <value>
+                <fullName>Crédito</fullName>
+                <default>false</default>
+                <label>Crédito</label>
+            </value>
+            <value>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <fullName>SAC/Ouvidoria</fullName>
+                <default>false</default>
+                <label>SAC/Ouvidoria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BloqueiaPercentualUtilizadoGarantia</fullName>
+    <active>true</active>
+    <description>Regra que impede que um contrato tenha sua porcentagem de utilização como garantia acima de 100%.</description>
+    <errorConditionFormula>utilizado__c &gt; 1</errorConditionFormula>
+    <errorMessage>Verifique a porcentagem de utilização deste contrato como garantia. O valor não deve ultrapassar 100%.</errorMessage>
+</ValidationRule>

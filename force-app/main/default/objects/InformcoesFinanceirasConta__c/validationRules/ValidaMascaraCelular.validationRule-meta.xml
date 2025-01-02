@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaMascaraCelular</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    CelularInternacional__c = false,
+    NOT(ISBLANK(Celular__c)),
+    NOT(REGEX(Celular__c, &apos;\\({1}[0-9]{2}\\){1} [0-9]{5}-[0-9]{4}&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>Celular__c</errorDisplayField>
+    <errorMessage>Celular inválido. Digite apenas os números do DDD e Telefone no padrão (00) 00000-0000.</errorMessage>
+</ValidationRule>

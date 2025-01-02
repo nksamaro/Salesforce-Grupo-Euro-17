@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Captação e investimentos</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Declinado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Envio de contrato</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Novo</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Sem interesse</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Trabalhando</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

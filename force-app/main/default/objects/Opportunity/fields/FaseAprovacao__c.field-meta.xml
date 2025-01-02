@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FaseAprovacao__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Campo utilizado para o Processo de aprovação de Investimentos personalizado com VP sendo a aprovadora em todas as etapas.</description>
+    <externalId>false</externalId>
+    <label>Fase da aprovação</label>
+    <length>30</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

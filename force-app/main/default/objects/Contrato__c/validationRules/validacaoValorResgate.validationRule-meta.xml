@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validacaoValorResgate</fullName>
+    <active>true</active>
+    <description>Esta regra valida se no campo &quot;Resgate&quot; o valor selecionado foi &quot;Parcial&quot; e com isso o campo &quot;Valor do resgate&quot; se torna obrigatorio.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Resgate__c, &apos;Parcial&apos;), 
+    ISBLANK(ValorResgate__c)
+)</errorConditionFormula>
+    <errorDisplayField>ValorResgate__c</errorDisplayField>
+    <errorMessage>Para resgate parcial é obrigatório preencher o valor do resgate efetuado.</errorMessage>
+</ValidationRule>

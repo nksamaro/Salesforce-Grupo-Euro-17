@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AlterarDataFimContrato</fullName>
+    <active>true</active>
+    <description>Não permite alterar a data se o contrato estiver na fase Aguardando elaboração</description>
+    <errorConditionFormula>AND(ISCHANGED( 	DataFimContrato__c ),
+ISPICKVAL(Status__c, &apos;Aguardando elaboração&apos;))</errorConditionFormula>
+    <errorMessage>Para alterar a data final do contrato, altere seu status para &quot;Elaboração de contrato&quot;</errorMessage>
+</ValidationRule>

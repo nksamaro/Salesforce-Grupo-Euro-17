@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alcada__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Alçada</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Comitê</fullName>
+                <default>false</default>
+                <label>Comitê</label>
+            </value>
+            <value>
+                <fullName>Crédito</fullName>
+                <default>false</default>
+                <label>Crédito</label>
+            </value>
+            <value>
+                <fullName>Formalização</fullName>
+                <default>false</default>
+                <label>Formalização</label>
+            </value>
+            <value>
+                <fullName>Superintendência</fullName>
+                <default>false</default>
+                <label>Superintendência</label>
+            </value>
+            <value>
+                <fullName>Diretora de Crédito</fullName>
+                <default>false</default>
+                <label>Diretora de Crédito</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

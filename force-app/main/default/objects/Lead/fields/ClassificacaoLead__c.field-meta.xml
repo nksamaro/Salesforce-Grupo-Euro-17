@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClassificacaoLead__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(ValorEstimado__c), &quot;&quot;,
+    IF( ValorEstimado__c &lt;= 50000, &quot;C&quot;,
+        IF( ValorEstimado__c &lt;= 100000, &quot;B&quot;,
+            IF( ValorEstimado__c &lt;= 500000, &quot;A&quot;,
+                IF( ValorEstimado__c &lt;= 1000000, &quot;AA&quot;, &quot;AAA&quot;)
+            )
+        )
+    )
+)</formula>
+    <inlineHelpText>Classificação com o base no valor estimado a ser investido.</inlineHelpText>
+    <label>Classificação do lead</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

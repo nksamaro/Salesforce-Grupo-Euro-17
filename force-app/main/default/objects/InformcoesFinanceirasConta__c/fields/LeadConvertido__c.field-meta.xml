@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadConvertido__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Campo de controle para atribuir somente os Dados bancários relacionados ao Lead convertido na Oportunidade criada durante a conversão.</description>
+    <label>Lead convertido</label>
+    <referenceTo>Lead</referenceTo>
+    <relationshipLabel>Informações financeiras da conta</relationshipLabel>
+    <relationshipName>InformacoesFinanceirasConta</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

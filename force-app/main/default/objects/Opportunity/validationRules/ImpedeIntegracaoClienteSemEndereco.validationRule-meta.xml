@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpedeIntegracaoClienteSemEndereco</fullName>
+    <active>true</active>
+    <description>Regra que impede a integração de uma oportunidade com cliente relacionado sem endereço preenchido. Retirar validação de exclusão (função NOT) de Unidade de Negócio &quot;Operações estruturadas&quot; assim que a Integração com a Celcoin for concluída.</description>
+    <errorConditionFormula>AND(
+				NOT(UnidadeNegocio__c = &apos;Operações estruturadas&apos;),
+				ISCHANGED(StageName),
+				IsWon = true,
+    OR(
+								ISBLANK(Account.BairroCobranca__c),
+					   ISBLANK(Account.BillingCity),
+								ISBLANK(Account.BillingPostalCode),
+				    ISBLANK(Account.BillingState),
+				    ISBLANK(Account.BillingStreet),
+								ISBLANK(Account.NumeroCobranca__c)
+				)
+)</errorConditionFormula>
+    <errorMessage>Para finalizar uma oportunidade como ganha, é obrigatório o preenchimento de todos os campos de Endereço de cobrança do cliente relacionado. Preencha as informações na conta e tente novamente.</errorMessage>
+</ValidationRule>

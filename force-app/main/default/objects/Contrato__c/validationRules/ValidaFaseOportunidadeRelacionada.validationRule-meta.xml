@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaFaseOportunidadeRelacionada</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+AND(
+ISPICKVAL(Oportunidade__r.Type, &apos;Securitizadora&apos;),
+ CriadoPorAutomacao__c != true,
+Oportunidade__c  &lt;&gt; NULL,
+NOT(ISPICKVAL(Oportunidade__r.StageName, &apos;Contrato Assinado&apos;))),true, false
+)</errorConditionFormula>
+    <errorDisplayField>Oportunidade__c</errorDisplayField>
+    <errorMessage>Não é possível associar uma oportunidade com status diferente de Contrato Assinado</errorMessage>
+</ValidationRule>

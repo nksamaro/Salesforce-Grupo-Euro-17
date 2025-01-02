@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_de_abertura_PJ__c</fullName>
+    <inlineHelpText>Caso a conta relacionada ao eu lead seja PJ, informe a data de abertura.</inlineHelpText>
+    <label>Data de abertura PJ</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

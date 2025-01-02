@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AlteracaoGerentePrincipal</fullName>
+    <active>true</active>
+    <description>Verificar se o usuário que está alterando a flag de gerente principal é o mesmo atrelado ao registro ou um usuário com a permissão Formalização.</description>
+    <errorConditionFormula>AND(
+   ISCHANGED(GerentePrincipal__c),
+ OR(
+    IdUser__c !=  $User.Id,
+ NOT($Permission.FormalizacaoCredito)
+  )
+)</errorConditionFormula>
+    <errorMessage>Não é permitido a alteração da flag de Gerente Principal.</errorMessage>
+</ValidationRule>

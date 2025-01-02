@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>CompartilharContratosInvestimentosSecuritizadora</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Compartilhar Contratos Investimentos - Securitizadora</label>
+        <sharedTo>
+            <role>GerenteNegociosSecuritizadora</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Investimentos</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ContratoInvestimentosFormalizacao</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Acesso a leitura e gravação para o time de formalização aos contratos de investimentos</description>
+        <label>ContratoInvestimentosFormalização</label>
+        <sharedTo>
+            <group>Formalizacao</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Investimentos</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ContratosInvestimentosCompliance</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Acesso de leitura do crédito aos contratos de Investimentos</description>
+        <label>Contratos Investimentos Compliance</label>
+        <sharedTo>
+            <group>Compliance</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Investimentos</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ContratosInvestimentosCredito</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Contratos Investimentos Credito</label>
+        <sharedTo>
+            <group>Credito</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Investimentos</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ContratosOperacoesEstruturadasCompliance</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Permissão de leitura e gravação para o Compliance aos contratos de operações estruturadas.</description>
+        <label>Contratos Operaçoes estruturadas Compliance</label>
+        <sharedTo>
+            <group>Compliance</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Operações estruturadas</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ContratosOperacoesEstruturadasCredito</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Acesso do Credito de leitura e gravação aos contratos de Operações estruturadas</description>
+        <label>Contratos operações estruturadas Crédito</label>
+        <sharedTo>
+            <group>Credito</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Operações estruturadas</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ContratosOperacoesEstruturadasFormalizacao</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Acesso a leitura aos contratos de operações estruturadas para o time de Formalização</description>
+        <label>Contratos Operações Estruturadas Formalização</label>
+        <sharedTo>
+            <group>Formalizacao</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Operações estruturadas</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

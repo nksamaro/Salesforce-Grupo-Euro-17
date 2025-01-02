@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AreaInteresse__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Área de interesse</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Antecipação de FGTS</fullName>
+                <default>false</default>
+                <label>Antecipação de FGTS</label>
+            </value>
+            <value>
+                <fullName>Câmbio</fullName>
+                <default>false</default>
+                <label>Câmbio</label>
+            </value>
+            <value>
+                <fullName>Cartão de crédito</fullName>
+                <default>false</default>
+                <label>Cartão de crédito</label>
+            </value>
+            <value>
+                <fullName>CDC</fullName>
+                <default>false</default>
+                <label>CDC</label>
+            </value>
+            <value>
+                <fullName>Consignado</fullName>
+                <default>false</default>
+                <label>Consignado</label>
+            </value>
+            <value>
+                <fullName>Consórcio</fullName>
+                <default>false</default>
+                <label>Consórcio</label>
+            </value>
+            <value>
+                <fullName>Conta corrente</fullName>
+                <default>false</default>
+                <label>Conta corrente</label>
+            </value>
+            <value>
+                <fullName>Convênio médico</fullName>
+                <default>false</default>
+                <label>Convênio médico</label>
+            </value>
+            <value>
+                <fullName>Convênio odontológico</fullName>
+                <default>false</default>
+                <label>Convênio odontológico</label>
+            </value>
+            <value>
+                <fullName>Convênio PME</fullName>
+                <default>false</default>
+                <label>Convênio PME</label>
+            </value>
+            <value>
+                <fullName>Crédito imobiliário</fullName>
+                <default>false</default>
+                <label>Crédito imobiliário</label>
+            </value>
+            <value>
+                <fullName>Crédito pessoa jurídica</fullName>
+                <default>false</default>
+                <label>Crédito pessoa jurídica</label>
+            </value>
+            <value>
+                <fullName>Crédito Pessoal</fullName>
+                <default>false</default>
+                <label>Crédito Pessoal</label>
+            </value>
+            <value>
+                <fullName>Empréstimo garantia de imóvel</fullName>
+                <default>false</default>
+                <label>Empréstimo garantia de imóvel</label>
+            </value>
+            <value>
+                <fullName>Empréstimo garantia de veículo</fullName>
+                <default>false</default>
+                <label>Empréstimo garantia de veículo</label>
+            </value>
+            <value>
+                <fullName>Eventos</fullName>
+                <default>false</default>
+                <label>Eventos</label>
+            </value>
+            <value>
+                <fullName>Imóvel</fullName>
+                <default>false</default>
+                <label>Imóvel</label>
+            </value>
+            <value>
+                <fullName>Investimento</fullName>
+                <default>false</default>
+                <label>Investimento</label>
+            </value>
+            <value>
+                <fullName>Operações estruturadas</fullName>
+                <default>false</default>
+                <label>Operações estruturadas</label>
+            </value>
+            <value>
+                <fullName>Previdência</fullName>
+                <default>false</default>
+                <label>Previdência</label>
+            </value>
+            <value>
+                <fullName>Promotora</fullName>
+                <default>false</default>
+                <label>Promotora</label>
+            </value>
+            <value>
+                <fullName>Seguro</fullName>
+                <default>false</default>
+                <label>Seguro</label>
+            </value>
+            <value>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+                <label>Tickets</label>
+            </value>
+            <value>
+                <fullName>17Com (marketing)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>17Com (marketing)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

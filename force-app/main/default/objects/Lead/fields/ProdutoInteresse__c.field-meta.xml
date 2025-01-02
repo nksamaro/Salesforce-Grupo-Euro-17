@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProdutoInteresse__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Produto de interesse</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Antecipação de recebíveis</fullName>
+                <default>false</default>
+                <label>Antecipação de recebíveis</label>
+            </value>
+            <value>
+                <fullName>Conta Escrow</fullName>
+                <default>false</default>
+                <label>Conta Escrow</label>
+            </value>
+            <value>
+                <fullName>Giro Parcelado</fullName>
+                <default>false</default>
+                <label>Giro Parcelado</label>
+            </value>
+            <value>
+                <fullName>Capital de Giro</fullName>
+                <default>false</default>
+                <label>Capital de Giro</label>
+            </value>
+            <value>
+                <fullName>Financiamento de imóvel</fullName>
+                <default>false</default>
+                <label>Financiamento de imóvel</label>
+            </value>
+            <value>
+                <fullName>Financiamento de veículo</fullName>
+                <default>false</default>
+                <label>Financiamento de veículo</label>
+            </value>
+            <value>
+                <fullName>Empréstimo com imóvel em garantia</fullName>
+                <default>false</default>
+                <label>Empréstimo com imóvel em garantia</label>
+            </value>
+            <value>
+                <fullName>Empréstimo com veiculo em garantia</fullName>
+                <default>false</default>
+                <label>Empréstimo com veiculo em garantia</label>
+            </value>
+            <value>
+                <fullName>Empréstimo com veiculo pesado em garantia</fullName>
+                <default>false</default>
+                <label>Empréstimo com veiculo pesado em garantia</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

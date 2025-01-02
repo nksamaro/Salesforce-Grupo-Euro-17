@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oportunidades_do_meu_time</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Team</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Pendente,Validando Taxa,Validando Taxa/Prazo,Taxa/Prazo Reprovada,Taxa/Prazo Aprovada,Ag Aprovação,Reprovado,Devolvido,Aprovado,Elaboração de Contrato,Contrato Enviado,Contrato Assinado</value>
+    </filters>
+    <label>Oportunidades do meu time</label>
+</ListView>

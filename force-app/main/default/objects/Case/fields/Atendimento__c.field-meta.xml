@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Atendimento__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Atendimento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SAC</fullName>
+                <default>false</default>
+                <label>SAC</label>
+            </value>
+            <value>
+                <fullName>Ouvidoria</fullName>
+                <default>false</default>
+                <label>Ouvidoria</label>
+            </value>
+            <value>
+                <fullName>Mídias Sociais</fullName>
+                <default>false</default>
+                <label>Mídias Sociais</label>
+            </value>
+            <value>
+                <fullName>Gestão Centralizada de Reclamação</fullName>
+                <default>false</default>
+                <label>Gestão Centralizada de Reclamação</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

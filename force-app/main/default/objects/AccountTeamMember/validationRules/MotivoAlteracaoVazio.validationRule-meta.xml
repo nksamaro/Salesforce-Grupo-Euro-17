@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoAlteracaoVazio</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    PRIORVALUE(GerentePrincipal__c),
+    ISBLANK(MotivoAlteracao__c),
+ OR(
+    IdUser__c == $User.Id,
+    $Permission.FormalizacaoCredito
+  )
+)</errorConditionFormula>
+    <errorMessage>Informe o motivo da alteração do Gerente Principal.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TimeRelacionamento</fullName>
+    <active>true</active>
+    <description>Cadastro dos gerentes relacionados à oportunidade</description>
+    <label>Time de relacionamento</label>
+    <picklistValues>
+        <picklist>TipoRelacionamento__c</picklist>
+        <values>
+            <fullName>Parceiro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

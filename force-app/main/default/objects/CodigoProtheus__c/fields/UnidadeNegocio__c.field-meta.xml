@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnidadeNegocio__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Unidade de negócio</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Produtos financeiros</fullName>
+                <default>false</default>
+                <label>Produtos financeiros</label>
+            </value>
+            <value>
+                <fullName>Investimentos</fullName>
+                <default>false</default>
+                <label>Investimentos</label>
+            </value>
+            <value>
+                <fullName>Prime Euro Securitizadora</fullName>
+                <default>false</default>
+                <label>Prime Euro Securitizadora</label>
+            </value>
+            <value>
+                <fullName>Operações estruturadas</fullName>
+                <default>false</default>
+                <label>Operações estruturadas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

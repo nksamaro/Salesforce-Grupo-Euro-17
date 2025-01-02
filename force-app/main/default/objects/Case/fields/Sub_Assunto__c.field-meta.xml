@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Assunto__c</fullName>
+    <label>Sub Assunto</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Assunto__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Não tem interesse pelo produto</fullName>
+                <default>false</default>
+                <label>Não tem interesse pelo produto</label>
+            </value>
+            <value>
+                <fullName>Não autorizou ou solicitou o contato</fullName>
+                <default>false</default>
+                <label>Não autorizou ou solicitou o contato</label>
+            </value>
+            <value>
+                <fullName>Não conhece a pessoa procurada</fullName>
+                <default>false</default>
+                <label>Não conhece a pessoa procurada</label>
+            </value>
+            <value>
+                <fullName>CP</fullName>
+                <default>false</default>
+                <label>CP</label>
+            </value>
+            <value>
+                <fullName>Consignado</fullName>
+                <default>false</default>
+                <label>Consignado</label>
+            </value>
+            <value>
+                <fullName>FGTS</fullName>
+                <default>false</default>
+                <label>FGTS</label>
+            </value>
+            <value>
+                <fullName>Crefaz</fullName>
+                <default>false</default>
+                <label>Crefaz</label>
+            </value>
+            <value>
+                <fullName>Seguros</fullName>
+                <default>false</default>
+                <label>Seguros</label>
+            </value>
+            <value>
+                <fullName>Consórcio</fullName>
+                <default>false</default>
+                <label>Consórcio</label>
+            </value>
+            <value>
+                <fullName>EGI</fullName>
+                <default>false</default>
+                <label>EGI</label>
+            </value>
+            <value>
+                <fullName>EGV</fullName>
+                <default>false</default>
+                <label>EGV</label>
+            </value>
+            <value>
+                <fullName>FGI</fullName>
+                <default>false</default>
+                <label>FGI</label>
+            </value>
+            <value>
+                <fullName>FGV</fullName>
+                <default>false</default>
+                <label>FGV</label>
+            </value>
+            <value>
+                <fullName>Investimentos</fullName>
+                <default>false</default>
+                <label>Investimentos</label>
+            </value>
+            <value>
+                <fullName>EPJ</fullName>
+                <default>false</default>
+                <label>EPJ</label>
+            </value>
+            <value>
+                <fullName>Capital de Giro</fullName>
+                <default>false</default>
+                <label>Capital de Giro</label>
+            </value>
+            <value>
+                <fullName>Antecipação de Recebíveis</fullName>
+                <default>false</default>
+                <label>Antecipação de Recebíveis</label>
+            </value>
+            <value>
+                <fullName>F.I</fullName>
+                <default>false</default>
+                <label>F.I</label>
+            </value>
+            <value>
+                <fullName>F.V</fullName>
+                <default>false</default>
+                <label>F.V</label>
+            </value>
+            <value>
+                <fullName>Parceria</fullName>
+                <default>false</default>
+                <label>Parceria</label>
+            </value>
+            <value>
+                <fullName>RH</fullName>
+                <default>false</default>
+                <label>RH</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Compras</fullName>
+                <default>false</default>
+                <label>Compras</label>
+            </value>
+            <value>
+                <fullName>É colaborador</fullName>
+                <default>false</default>
+                <label>É colaborador</label>
+            </value>
+            <value>
+                <fullName>Não é colaborador</fullName>
+                <default>false</default>
+                <label>Não é colaborador</label>
+            </value>
+            <value>
+                <fullName>Sem Interação</fullName>
+                <default>false</default>
+                <label>Sem Interação</label>
+            </value>
+            <value>
+                <fullName>Queda de Ligação</fullName>
+                <default>false</default>
+                <label>Queda de Ligação</label>
+            </value>
+            <value>
+                <fullName>Engano</fullName>
+                <default>false</default>
+                <label>Engano</label>
+            </value>
+            <value>
+                <fullName>Valor divergente</fullName>
+                <default>false</default>
+                <label>Valor divergente</label>
+            </value>
+            <value>
+                <fullName>Valor das parcelas divergente</fullName>
+                <default>false</default>
+                <label>Valor das parcelas divergente</label>
+            </value>
+            <value>
+                <fullName>Quant. de parcelas divergente</fullName>
+                <default>false</default>
+                <label>Quant. de parcelas divergente</label>
+            </value>
+            <value>
+                <fullName>Taxa divergente</fullName>
+                <default>false</default>
+                <label>Taxa divergente</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <controllingFieldValue>Renegociação</controllingFieldValue>
+            <valueName>CP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <valueName>Consignado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <valueName>FGTS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <valueName>Crefaz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <valueName>Seguros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <valueName>Consórcio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <controllingFieldValue>Renegociação</controllingFieldValue>
+            <valueName>EGI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <controllingFieldValue>Renegociação</controllingFieldValue>
+            <valueName>EGV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <valueName>FGV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <controllingFieldValue>Ligação</controllingFieldValue>
+            <valueName>Investimentos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <controllingFieldValue>Ligação</controllingFieldValue>
+            <valueName>EPJ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <valueName>Capital de Giro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <valueName>Antecipação de Recebíveis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Renegociação</controllingFieldValue>
+            <valueName>F.I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Produto</controllingFieldValue>
+            <controllingFieldValue>Renegociação</controllingFieldValue>
+            <valueName>F.V</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contratação de Produto</controllingFieldValue>
+            <valueName>FGI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contato Interno</controllingFieldValue>
+            <valueName>Parceria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contato Interno</controllingFieldValue>
+            <valueName>RH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contato Interno</controllingFieldValue>
+            <valueName>Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contato Interno</controllingFieldValue>
+            <valueName>Compras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Veracidade de Contato</controllingFieldValue>
+            <controllingFieldValue>Suspeita de Fraude</controllingFieldValue>
+            <valueName>É colaborador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Veracidade de Contato</controllingFieldValue>
+            <controllingFieldValue>Suspeita de Fraude</controllingFieldValue>
+            <valueName>Não é colaborador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blocklist</controllingFieldValue>
+            <valueName>Não tem interesse pelo produto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blocklist</controllingFieldValue>
+            <valueName>Não autorizou ou solicitou o contato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Blocklist</controllingFieldValue>
+            <valueName>Não conhece a pessoa procurada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Divergência de Informação</controllingFieldValue>
+            <valueName>Valor divergente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Divergência de Informação</controllingFieldValue>
+            <valueName>Valor das parcelas divergente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Divergência de Informação</controllingFieldValue>
+            <valueName>Quant. de parcelas divergente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Divergência de Informação</controllingFieldValue>
+            <valueName>Taxa divergente</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

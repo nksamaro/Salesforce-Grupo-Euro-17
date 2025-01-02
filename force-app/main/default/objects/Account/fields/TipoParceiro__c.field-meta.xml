@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipoParceiro__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Tipo de parceiro</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Corretor autônomo</fullName>
+                <default>false</default>
+                <label>Corretor autônomo</label>
+            </value>
+            <value>
+                <fullName>Portais</fullName>
+                <default>false</default>
+                <label>Portais</label>
+            </value>
+            <value>
+                <fullName>Construtora</fullName>
+                <default>false</default>
+                <label>Construtora</label>
+            </value>
+            <value>
+                <fullName>Imobiliária</fullName>
+                <default>false</default>
+                <label>Imobiliária</label>
+            </value>
+            <value>
+                <fullName>Assessoria</fullName>
+                <default>false</default>
+                <label>Assessoria</label>
+            </value>
+            <value>
+                <fullName>Banco</fullName>
+                <default>false</default>
+                <label>Banco</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

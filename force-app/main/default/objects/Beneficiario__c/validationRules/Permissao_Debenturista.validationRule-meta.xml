@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permissao_Debenturista</fullName>
+    <active>true</active>
+    <errorConditionFormula>And( Not(  ISBLANK(Contrato__c) ) ,
+     RecordType.Name = &apos;Debenturista&apos; ,         
+     Not($Permission.FormalizacaoCredito )
+   )</errorConditionFormula>
+    <errorMessage>Somente o time de Formalização possui permissão para edição ou criação de um novo debenturista.</errorMessage>
+</ValidationRule>

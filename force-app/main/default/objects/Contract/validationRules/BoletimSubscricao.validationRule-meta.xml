@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BoletimSubscricao</fullName>
+    <active>true</active>
+    <description>Obrigatoriedade do campo Boletim de Subscrição e Transferência realizada deve ocorrer quando a fase for Transferência realizada ou contrato Assinado</description>
+    <errorConditionFormula>And($Permission.FormalizacaoCredito,
+			 UnidadeNegocio__c = &apos;Investimentos&apos;,
+				ISPICKVAL(Status, &apos;Contrato Assinado&apos;),
+    Or(NOT(ISPICKVAL(Transferencia_realizada__c, &apos;Sim&apos;)),
+       ISBLANK(BoletimSubscricao__c)
+    )
+)</errorConditionFormula>
+    <errorDisplayField>BoletimSubscricao__c</errorDisplayField>
+    <errorMessage>O campo Boletim de Subscrição deve ser preenchido e a Transferência deve ser realizada para que o Status seja atualizado para &quot;Contrato Assinado&quot;.</errorMessage>
+</ValidationRule>

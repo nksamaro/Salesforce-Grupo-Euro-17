@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>VerificaTipoInformacao</name>
+        <label>Verifica Tipo Informação</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Resultado padrão</defaultConnectorLabel>
+        <rules>
+            <name>DadoBancario</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DadoBancario</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NameInstituicaoFinanceira</targetReference>
+            </connector>
+            <label>Dado Bancario</label>
+        </rules>
+        <rules>
+            <name>CadastroRenda</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CadastrarRenda</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NameDocNome</targetReference>
+            </connector>
+            <label>Cadastro Renda</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>NameDadoBancario</name>
+        <dataType>String</dataType>
+        <expression>{!ObterConta.Name}+ &apos;-&apos; + TEXT({!$Record.InstituicaoFinaneira__c})</expression>
+    </formulas>
+    <formulas>
+        <name>NomeDocumento</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Nome__c} + &apos;-&apos; + {!$Record.Documento__c}</expression>
+    </formulas>
+    <interviewLabel>[Informações Financeiras Conta] - Before Insert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>[Informações Financeiras Conta] - Before Insert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>ObterConta</name>
+        <label>Obter Conta</label>
+        <locationX>314</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>VerificaTipoInformacao</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ContaRelacionada__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>NameDocNome</name>
+        <label>Name - Doc + Nome</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>NomeDocumento</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>NameInstituicaoFinanceira</name>
+        <label>Name - Instituição Financeira</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>NameDadoBancario</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>ObterConta</targetReference>
+        </connector>
+        <object>InformcoesFinanceirasConta__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

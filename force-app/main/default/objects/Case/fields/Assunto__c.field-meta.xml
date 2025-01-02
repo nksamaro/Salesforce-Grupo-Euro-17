@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assunto__c</fullName>
+    <label>Assunto</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blocklist</fullName>
+                <default>false</default>
+                <label>Blocklist</label>
+            </value>
+            <value>
+                <fullName>Maus Tratos</fullName>
+                <default>false</default>
+                <label>Maus Tratos</label>
+            </value>
+            <value>
+                <fullName>Abandono de Atendimento</fullName>
+                <default>false</default>
+                <label>Abandono de Atendimento</label>
+            </value>
+            <value>
+                <fullName>Cobrança Indevida</fullName>
+                <default>false</default>
+                <label>Cobrança Indevida</label>
+            </value>
+            <value>
+                <fullName>Desconhece o Contrato</fullName>
+                <default>false</default>
+                <label>Desconhece o Contrato</label>
+            </value>
+            <value>
+                <fullName>Suspeita de Fraude</fullName>
+                <default>false</default>
+                <label>Suspeita de Fraude</label>
+            </value>
+            <value>
+                <fullName>Não recebeu o valor</fullName>
+                <default>false</default>
+                <label>Não recebeu o valor</label>
+            </value>
+            <value>
+                <fullName>Não recebeu o boleto</fullName>
+                <default>false</default>
+                <label>Não recebeu o boleto</label>
+            </value>
+            <value>
+                <fullName>Divergência de Informação</fullName>
+                <default>false</default>
+                <label>Divergência de Informação</label>
+            </value>
+            <value>
+                <fullName>Amortização</fullName>
+                <default>false</default>
+                <label>Amortização</label>
+            </value>
+            <value>
+                <fullName>Alteração Cadastral</fullName>
+                <default>false</default>
+                <label>Alteração Cadastral</label>
+            </value>
+            <value>
+                <fullName>Contratação de Produto</fullName>
+                <default>false</default>
+                <label>Contratação de Produto</label>
+            </value>
+            <value>
+                <fullName>2ª via do Boleto</fullName>
+                <default>false</default>
+                <label>2ª via do Boleto</label>
+            </value>
+            <value>
+                <fullName>2ª via do Contrato</fullName>
+                <default>false</default>
+                <label>2ª via do Contrato</label>
+            </value>
+            <value>
+                <fullName>Renegociação</fullName>
+                <default>false</default>
+                <label>Renegociação</label>
+            </value>
+            <value>
+                <fullName>Cancelamento do Contrato</fullName>
+                <default>false</default>
+                <label>Cancelamento do Contrato</label>
+            </value>
+            <value>
+                <fullName>Contato Interno</fullName>
+                <default>false</default>
+                <label>Contato Interno</label>
+            </value>
+            <value>
+                <fullName>Ligação</fullName>
+                <default>false</default>
+                <label>Ligação</label>
+            </value>
+            <value>
+                <fullName>Veracidade de Contato</fullName>
+                <default>false</default>
+                <label>Veracidade de Contato</label>
+            </value>
+            <value>
+                <fullName>Loja</fullName>
+                <default>false</default>
+                <label>Loja</label>
+            </value>
+            <value>
+                <fullName>Procedimento</fullName>
+                <default>false</default>
+                <label>Procedimento</label>
+            </value>
+            <value>
+                <fullName>Produto</fullName>
+                <default>false</default>
+                <label>Produto</label>
+            </value>
+            <value>
+                <fullName>Sem Interação</fullName>
+                <default>false</default>
+                <label>Sem Interação</label>
+            </value>
+            <value>
+                <fullName>Queda de Ligação</fullName>
+                <default>false</default>
+                <label>Queda de Ligação</label>
+            </value>
+            <value>
+                <fullName>Engano</fullName>
+                <default>false</default>
+                <label>Engano</label>
+            </value>
+            <value>
+                <fullName>Elogio</fullName>
+                <default>false</default>
+                <label>Elogio</label>
+            </value>
+            <value>
+                <fullName>Teste</fullName>
+                <default>false</default>
+                <label>Teste</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Outros</controllingFieldValue>
+            <valueName>Sem Interação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outros</controllingFieldValue>
+            <valueName>Queda de Ligação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outros</controllingFieldValue>
+            <valueName>Engano</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outros</controllingFieldValue>
+            <valueName>Teste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dúvida</controllingFieldValue>
+            <valueName>Procedimento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dúvida</controllingFieldValue>
+            <valueName>Produto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informação</controllingFieldValue>
+            <valueName>Veracidade de Contato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informação</controllingFieldValue>
+            <valueName>Loja</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Amortização</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Alteração Cadastral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Contratação de Produto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>2ª via do Boleto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>2ª via do Contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Renegociação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Cancelamento do Contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Contato Interno</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitação</controllingFieldValue>
+            <valueName>Ligação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reclamação</controllingFieldValue>
+            <valueName>Blocklist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reclamação</controllingFieldValue>
+            <valueName>Maus Tratos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reclamação</controllingFieldValue>
+            <valueName>Abandono de Atendimento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reclamação</controllingFieldValue>
+            <valueName>Cobrança Indevida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reclamação</controllingFieldValue>
+            <valueName>Desconhece o Contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reclamação</controllingFieldValue>
+            <valueName>Suspeita de Fraude</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reclamação</controllingFieldValue>
+            <valueName>Não recebeu o valor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reclamação</controllingFieldValue>
+            <valueName>Não recebeu o boleto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reclamação</controllingFieldValue>
+            <valueName>Divergência de Informação</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

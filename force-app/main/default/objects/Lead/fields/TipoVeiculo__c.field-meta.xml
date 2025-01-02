@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipoVeiculo__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Tipo do veículo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Passeio</fullName>
+                <default>false</default>
+                <label>Passeio</label>
+            </value>
+            <value>
+                <fullName>Pesado</fullName>
+                <default>false</default>
+                <label>Pesado</label>
+            </value>
+            <value>
+                <fullName>Utilitário</fullName>
+                <default>false</default>
+                <label>Utilitário</label>
+            </value>
+            <value>
+                <fullName>Moto</fullName>
+                <default>false</default>
+                <label>Moto</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

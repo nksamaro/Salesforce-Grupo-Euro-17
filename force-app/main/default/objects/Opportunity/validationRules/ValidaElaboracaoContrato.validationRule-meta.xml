@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaElaboracaoContrato</fullName>
+    <active>false</active>
+    <description>Quando a oportunidade estiver na fase em “Elaboração de Contrato”, não deverá ser possível Editar a Oportunidade.</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(PRIORVALUE(StageName), &apos;Elaboração de Contrato&apos;),
+ISPICKVAL(PRIORVALUE(StageName), &apos;Contrato assinado&apos;)
+
+),
+NOT(ISPICKVAL(StageName, &apos;Contrato assinado&apos;)),
+
+NOT(ISPICKVAL(StageName, &apos;Contrato Enviado&apos;)),
+NOT(ISPICKVAL(StageName, &apos;Perdido&apos;)),
+NOT($Profile.Name = &quot;Administrador do sistema&quot;),
+NOT($UserRole.Name = &quot;Formalização&quot;),
+NOT($UserRole.Name = &quot;Executivo de Formalização&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Quando a oportunidade está na fase em “Elaboração de Contrato ou Contrato Assinado”, não é possível Editar a Oportunidade. Caso precise crie uma nova!</errorMessage>
+</ValidationRule>

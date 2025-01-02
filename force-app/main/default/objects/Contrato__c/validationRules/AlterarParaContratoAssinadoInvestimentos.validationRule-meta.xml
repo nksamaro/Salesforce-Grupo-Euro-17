@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AlterarParaContratoAssinadoInvestimentos</fullName>
+    <active>true</active>
+    <description>Obrigatório preencher o boletim de subscrição e o campo transferência realizada ser Sim.</description>
+    <errorConditionFormula>And( RecordType.DeveloperName = &apos;Investimentos&apos;,
+ISPICKVAL( Status__c , &apos;Contrato Assinado&apos;),
+    Or(NOT(ISPICKVAL( TransferenciaRealizada__c , &apos;Sim&apos;)),
+       ISBLANK( BoletimSubscricao__c )
+    )
+)</errorConditionFormula>
+    <errorMessage>O campo Boletim de Subscrição deve ser preenchido e a Transferência deve ser realizada para que o Status seja atualizado para &quot;Contrato Assinado&quot;.</errorMessage>
+</ValidationRule>

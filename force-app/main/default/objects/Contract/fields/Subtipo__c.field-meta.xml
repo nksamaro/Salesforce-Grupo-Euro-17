@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtipo__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Subtipo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TipoContrato__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Capital de giro</fullName>
+                <default>false</default>
+                <label>Capital de giro</label>
+            </value>
+            <value>
+                <fullName>Desconto</fullName>
+                <default>false</default>
+                <label>Desconto</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Empréstimo</controllingFieldValue>
+            <valueName>Capital de giro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Empréstimo</controllingFieldValue>
+            <valueName>Desconto</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

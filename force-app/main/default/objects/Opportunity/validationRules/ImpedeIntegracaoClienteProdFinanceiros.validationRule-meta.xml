@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpedeIntegracaoClienteProdFinanceiros</fullName>
+    <active>true</active>
+    <description>Impede que uma oportunidade da Unidade de negócio &quot;Produtos Financeiros&quot; seja integrada no Protheus sem as informações de banco escolhido na Cotação realizada.</description>
+    <errorConditionFormula>AND(
+				ISCHANGED(StageName),
+				IsWon = true,
+				CONTAINS(UnidadeNegocio__c, &apos;Produtos financeiros&apos;),
+				CotacoesFinalizadas__c = 0
+)</errorConditionFormula>
+    <errorMessage>Para finalizar uma oportunidade como ganha, é obrigatório uma cotação com banco escolhido e a proposta do banco relacionada. Realize as alterações na cotação e tente novamente.</errorMessage>
+</ValidationRule>

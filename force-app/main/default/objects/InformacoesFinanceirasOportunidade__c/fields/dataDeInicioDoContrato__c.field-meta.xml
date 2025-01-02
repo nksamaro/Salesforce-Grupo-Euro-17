@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dataDeInicioDoContrato__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>Contrato__r.DataInicioContrato__c</formula>
+    <label>Data de inicio do contrato</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

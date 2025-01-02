@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bdrs__All</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>bdrs__ScheduledTime__c</columns>
+    <columns>bdrs__Work__c</columns>
+    <columns>bdrs__Status__c</columns>
+    <columns>bdrs__Priority__c</columns>
+    <columns>bdrs__Attempts__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>bdrs__Content__c</columns>
+    <columns>bdrs__Exception__c</columns>
+    <columns>bdrs__Response__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

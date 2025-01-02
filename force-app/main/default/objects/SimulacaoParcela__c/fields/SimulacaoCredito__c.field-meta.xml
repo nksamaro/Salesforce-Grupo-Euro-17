@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SimulacaoCredito__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Simulação de crédito</label>
+    <referenceTo>SimulacaoCredito__c</referenceTo>
+    <relationshipLabel>Simulações de parcela</relationshipLabel>
+    <relationshipName>SimulacoesParcela</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

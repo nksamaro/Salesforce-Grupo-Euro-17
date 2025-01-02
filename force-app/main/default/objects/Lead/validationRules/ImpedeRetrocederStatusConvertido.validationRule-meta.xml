@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpedeRetrocederStatusConvertido</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISCHANGED(Status),
+    ISPICKVAL(PRIORVALUE(Status), &quot;Convertido&quot;),
+    NOT(ISPICKVAL(Status, &quot;Convertido&quot;))
+)</errorConditionFormula>
+    <errorMessage>Não é possível retroceder o status após convertido.</errorMessage>
+</ValidationRule>

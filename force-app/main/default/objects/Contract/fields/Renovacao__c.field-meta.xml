@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renovacao__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Gerente de Investimentos, Quer poder preencher o campo Renovação, Para que o time de formalização possa realizar a elaboração do contrato com as regras correspondentes.</description>
+    <label>Renovação</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prorrogação sem pagamento de rendimento</fullName>
+                <default>false</default>
+                <label>Prorrogação sem pagamento de rendimento</label>
+            </value>
+            <value>
+                <fullName>Prorrogação com pagamento de juros (rendimento)</fullName>
+                <default>false</default>
+                <label>Prorrogação com pagamento de juros (rendimento)</label>
+            </value>
+            <value>
+                <fullName>Renovação com pagamento parcial do principal</fullName>
+                <default>false</default>
+                <label>Renovação com pagamento parcial do principal</label>
+            </value>
+            <value>
+                <fullName>Renovação com pagamento parcial do principal + juros</fullName>
+                <default>false</default>
+                <label>Renovação com pagamento parcial do principal + juros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

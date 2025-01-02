@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpedeDesassociacaoOportunidade</fullName>
+    <active>true</active>
+    <description>Regra que impede a desassociação da oportunidade que iniciou o contrato.</description>
+    <errorConditionFormula>AND(
+				ISCHANGED(Oportunidade__c),
+				PRIORVALUE(Oportunidade__c) != null
+)</errorConditionFormula>
+    <errorDisplayField>Oportunidade__c</errorDisplayField>
+    <errorMessage>Não é possível desassociar a oportunidade que iniciou este contrato.</errorMessage>
+</ValidationRule>

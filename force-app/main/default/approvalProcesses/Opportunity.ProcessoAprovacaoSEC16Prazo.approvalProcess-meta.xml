@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Produto__c</field>
+        <field>Taxa__c</field>
+        <field>ValorOportunidade__c</field>
+        <field>PrazoOperacao__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>adhoc</type>
+            </approver>
+        </assignedApprover>
+        <label>Envio para Hierarquia</label>
+        <name>EnvioHierarquia</name>
+    </approvalStep>
+    <description>Processo de aprovação de taxa SEC 1.6 ou prazo da operação menor que 6 para Investimentos.</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>(1 AND (2 OR 3 OR 4))</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.NomeProduto__c</field>
+            <operation>equals</operation>
+            <value>Euro Securitizadora</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Taxa__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1,6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.PrazoOperacao__c</field>
+            <operation>lessThan</operation>
+            <value>6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.PrazoOperacao__c</field>
+            <operation>greaterThan</operation>
+            <value>24</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>AtualizarDataHoraUltimaAprovacao</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>AtualizarDataHoraUltimaAprovacao</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>AgValidacaoTaxa</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Processo de aprovação SEC 1.6 / Prazo</label>
+    <processOrder>2</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

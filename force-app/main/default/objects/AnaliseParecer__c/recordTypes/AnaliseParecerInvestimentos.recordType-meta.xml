@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AnaliseParecerInvestimentos</fullName>
+    <active>true</active>
+    <description>Análises destinadas as oportunidades de investimentos</description>
+    <label>Análise Parecer Investimentos</label>
+    <picklistValues>
+        <picklist>Alcada__c</picklist>
+        <values>
+            <fullName>Comitê</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crédito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formalização</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Superintendência</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatusAnalise__c</picklist>
+        <values>
+            <fullName>Aberto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aprovado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aprovado com ressalva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em análise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalonar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reprovado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

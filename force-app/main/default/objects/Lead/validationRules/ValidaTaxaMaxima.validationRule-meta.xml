@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaTaxaMaxima</fullName>
+    <active>true</active>
+    <description>O campo taxa, deve ter uma regra de validação que proíba uma taxa maior que 2% para Investimentos</description>
+    <errorConditionFormula>AND ( UnidadeNegocio__c = &apos;Investimentos&apos;,
+OR ( Taxa__c &lt; 0 , Taxa__c &gt; 2 )
+)</errorConditionFormula>
+    <errorDisplayField>Taxa__c</errorDisplayField>
+    <errorMessage>A Taxa nao pode ter valor maior que 2%</errorMessage>
+</ValidationRule>

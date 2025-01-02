@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ComplianceEmAberto</fullName>
+    <columns>Parecer__c</columns>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Comentario__c</columns>
+    <columns>Alcada__c</columns>
+    <columns>Responsavel__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>StatusAnalise__c</field>
+        <operation>notEqual</operation>
+        <value>Aprovado,Aprovado com ressalva,Reprovado,Escalonar</value>
+    </filters>
+    <label>Compliance - Em aberto</label>
+    <queue>Compliance</queue>
+    <sharedTo>
+        <group>Compliance</group>
+    </sharedTo>
+</ListView>

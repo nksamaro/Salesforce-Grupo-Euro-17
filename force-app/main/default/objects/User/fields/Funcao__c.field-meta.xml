@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funcao__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Função</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gerente de negócio</fullName>
+                <default>false</default>
+                <label>Gerente de negócio</label>
+            </value>
+            <value>
+                <fullName>Gerente geral</fullName>
+                <default>false</default>
+                <label>Gerente geral</label>
+            </value>
+            <value>
+                <fullName>Superintendente</fullName>
+                <default>false</default>
+                <label>Superintendente</label>
+            </value>
+            <value>
+                <fullName>Diretor</fullName>
+                <default>false</default>
+                <label>Diretor</label>
+            </value>
+            <value>
+                <fullName>Vice presidencia</fullName>
+                <default>false</default>
+                <label>Vice presidencia</label>
+            </value>
+            <value>
+                <fullName>Presidente</fullName>
+                <default>false</default>
+                <label>Presidente</label>
+            </value>
+            <value>
+                <fullName>Ex gerente parceiro</fullName>
+                <default>false</default>
+                <label>Ex gerente parceiro</label>
+            </value>
+            <value>
+                <fullName>Ex gerente inativo</fullName>
+                <default>false</default>
+                <label>Ex gerente inativo</label>
+            </value>
+            <value>
+                <fullName>Retenção</fullName>
+                <default>false</default>
+                <label>Retenção</label>
+            </value>
+            <value>
+                <fullName>Ex gerente exceção</fullName>
+                <default>false</default>
+                <label>Ex gerente exceção</label>
+            </value>
+            <value>
+                <fullName>Gestor(a)</fullName>
+                <default>false</default>
+                <label>Gestor(a)</label>
+            </value>
+            <value>
+                <fullName>Analista</fullName>
+                <default>false</default>
+                <label>Analista</label>
+            </value>
+            <value>
+                <fullName>Analista SAC/Ouvidoria</fullName>
+                <default>false</default>
+                <label>Analista SAC/Ouvidoria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

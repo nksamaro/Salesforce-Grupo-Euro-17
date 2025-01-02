@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeclinadoCaptacaoInvestimento</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Status, &quot;Declinado&quot;),
+UnidadeNegocio__c  = &quot;Investimentos&quot;)</errorConditionFormula>
+    <errorMessage>Para leads de Investimentos você deve selecionar a opção Sem Interesse.</errorMessage>
+</ValidationRule>

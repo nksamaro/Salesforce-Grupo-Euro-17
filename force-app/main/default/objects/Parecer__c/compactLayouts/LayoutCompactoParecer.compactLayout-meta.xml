@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LayoutCompactoParecer</fullName>
+    <fields>Name</fields>
+    <fields>AlcadaAtual__c</fields>
+    <fields>UnidadeNegocio__c</fields>
+    <fields>Oportunidade__c</fields>
+    <fields>Escalonar__c</fields>
+    <label>Layout Compacto Parecer</label>
+</CompactLayout>

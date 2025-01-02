@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrazoOperacao</fullName>
+    <active>true</active>
+    <description>No layout de oportunidade deverá ser retirado o campo denominado “Qtde de parcelas” na seção de Informações e o O campo que deverá ser enviado para a emissão de contrato é o campo “Prazo da Operação” da oportunidade.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName == &apos;OperacoesEstruturadas&apos;,
+    ISPICKVAL(Periodo__c, &apos;Mensal&apos;),
+    ISBLANK( 	PrazoContrato__c )
+)</errorConditionFormula>
+    <errorMessage>Informe o Prazo do Contrato</errorMessage>
+</ValidationRule>

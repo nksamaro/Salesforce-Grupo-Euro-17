@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_de_fechamento_igual_data_de_aporte</fullName>
+    <active>false</active>
+    <description>Os campos Data de Fechamento e Data de Aporte devem conter as mesmas datas.</description>
+    <errorConditionFormula>CloseDate &lt;&gt; DataAporte__c</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>A sua data de fechamento não pode ser diferente da sua data de aporte! Por favor coloque as mesmas datas nos dois campos.</errorMessage>
+</ValidationRule>

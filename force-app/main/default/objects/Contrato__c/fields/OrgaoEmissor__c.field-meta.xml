@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrgaoEmissor__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Órgão emissor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ABNC - Academia Brasileira de Neurocirurgia</fullName>
+                <default>false</default>
+                <label>ABNC - Academia Brasileira de Neurocirurgia</label>
+            </value>
+            <value>
+                <fullName>AGU - Advocacia-Geral da União</fullName>
+                <default>false</default>
+                <label>AGU - Advocacia-Geral da União</label>
+            </value>
+            <value>
+                <fullName>ANAC - Agência Nacional de Aviação Civil</fullName>
+                <default>false</default>
+                <label>ANAC - Agência Nacional de Aviação Civil</label>
+            </value>
+            <value>
+                <fullName>CAER - Clube de Aeronáutica</fullName>
+                <default>false</default>
+                <label>CAER - Clube de Aeronáutica</label>
+            </value>
+            <value>
+                <fullName>CAU - Conselho de Arquitetura e Urbanismo</fullName>
+                <default>false</default>
+                <label>CAU - Conselho de Arquitetura e Urbanismo</label>
+            </value>
+            <value>
+                <fullName>CBM - Corpo de Bombeiro Militar</fullName>
+                <default>false</default>
+                <label>CBM - Corpo de Bombeiro Militar</label>
+            </value>
+            <value>
+                <fullName>CFA - Conselho Federal Administração</fullName>
+                <default>false</default>
+                <label>CFA - Conselho Federal Administração</label>
+            </value>
+            <value>
+                <fullName>CFB - Conselho Federal de Biblioteconomia</fullName>
+                <default>false</default>
+                <label>CFB - Conselho Federal de Biblioteconomia</label>
+            </value>
+            <value>
+                <fullName>CFBIO - Conselho Federal de Biologia</fullName>
+                <default>false</default>
+                <label>CFBIO - Conselho Federal de Biologia</label>
+            </value>
+            <value>
+                <fullName>CFBM - Conselho Federal de Biomedicina</fullName>
+                <default>false</default>
+                <label>CFBM - Conselho Federal de Biomedicina</label>
+            </value>
+            <value>
+                <fullName>CFC - Conselho Federal de Contabilidade</fullName>
+                <default>false</default>
+                <label>CFC - Conselho Federal de Contabilidade</label>
+            </value>
+            <value>
+                <fullName>CFESS - Conselho Federal de Serviço Social</fullName>
+                <default>false</default>
+                <label>CFESS - Conselho Federal de Serviço Social</label>
+            </value>
+            <value>
+                <fullName>CFF - Conselho Regional de Farmácia</fullName>
+                <default>false</default>
+                <label>CFF - Conselho Regional de Farmácia</label>
+            </value>
+            <value>
+                <fullName>CFFA - Conselho Federal de Fonoaudiologia</fullName>
+                <default>false</default>
+                <label>CFFA - Conselho Federal de Fonoaudiologia</label>
+            </value>
+            <value>
+                <fullName>CFM - Conselho Federal de Medicina</fullName>
+                <default>false</default>
+                <label>CFM - Conselho Federal de Medicina</label>
+            </value>
+            <value>
+                <fullName>CFMV - Conselho Federal de Medicina Veterinária</fullName>
+                <default>false</default>
+                <label>CFMV - Conselho Federal de Medicina Veterinária</label>
+            </value>
+            <value>
+                <fullName>CFN - Conselho Federal de Nutrição</fullName>
+                <default>false</default>
+                <label>CFN - Conselho Federal de Nutrição</label>
+            </value>
+            <value>
+                <fullName>CFO - Conselho Federal de Odontologia</fullName>
+                <default>false</default>
+                <label>CFO - Conselho Federal de Odontologia</label>
+            </value>
+            <value>
+                <fullName>CFP - Conselho Federal de Psicologia</fullName>
+                <default>false</default>
+                <label>CFP - Conselho Federal de Psicologia</label>
+            </value>
+            <value>
+                <fullName>CFQ - Conselho Regional de Química</fullName>
+                <default>false</default>
+                <label>CFQ - Conselho Regional de Química</label>
+            </value>
+            <value>
+                <fullName>CFT - Conselho Federal dos Técnicos Industriais</fullName>
+                <default>false</default>
+                <label>CFT - Conselho Federal dos Técnicos Industriais</label>
+            </value>
+            <value>
+                <fullName>CFTA - Conselho Federal dos Técnicos Agrícolas</fullName>
+                <default>false</default>
+                <label>CFTA - Conselho Federal dos Técnicos Agrícolas</label>
+            </value>
+            <value>
+                <fullName>CGPI - Coordenação Geral de Privilégios e Imunidades</fullName>
+                <default>false</default>
+                <label>CGPI - Coordenação Geral de Privilégios e Imunidades</label>
+            </value>
+            <value>
+                <fullName>CGPMAF - Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras</fullName>
+                <default>false</default>
+                <label>CGPMAF - Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras</label>
+            </value>
+            <value>
+                <fullName>CIPC - Centro de Inteligência da Polícia Civil</fullName>
+                <default>false</default>
+                <label>CIPC - Centro de Inteligência da Polícia Civil</label>
+            </value>
+            <value>
+                <fullName>CNIG - Conselho Nacional de Imigração</fullName>
+                <default>false</default>
+                <label>CNIG - Conselho Nacional de Imigração</label>
+            </value>
+            <value>
+                <fullName>CNT - Confederação Nacional do Transporte</fullName>
+                <default>false</default>
+                <label>CNT - Confederação Nacional do Transporte</label>
+            </value>
+            <value>
+                <fullName>CNTV - Confederação Nacional de Vigilantes &amp; Prestadores de Serviços</fullName>
+                <default>false</default>
+                <label>CNTV - Confederação Nacional de Vigilantes &amp; Prestadores de Serviços</label>
+            </value>
+            <value>
+                <fullName>COFECI - Conselho Federal de Corretores de Imóveis</fullName>
+                <default>false</default>
+                <label>COFECI - Conselho Federal de Corretores de Imóveis</label>
+            </value>
+            <value>
+                <fullName>COFECON - Conselho Federal de Economia</fullName>
+                <default>false</default>
+                <label>COFECON - Conselho Federal de Economia</label>
+            </value>
+            <value>
+                <fullName>COFEM - Conselho Federal de Museologia</fullName>
+                <default>false</default>
+                <label>COFEM - Conselho Federal de Museologia</label>
+            </value>
+            <value>
+                <fullName>COFEN - Conselho Federal de Enfermagem</fullName>
+                <default>false</default>
+                <label>COFEN - Conselho Federal de Enfermagem</label>
+            </value>
+            <value>
+                <fullName>COFFITO - Conselho Regional de Fisioterapia e Terapia Ocupacional</fullName>
+                <default>false</default>
+                <label>COFFITO - Conselho Regional de Fisioterapia e Terapia Ocupacional</label>
+            </value>
+            <value>
+                <fullName>COMAER - Comando da Aeronáutica</fullName>
+                <default>false</default>
+                <label>COMAER - Comando da Aeronáutica</label>
+            </value>
+            <value>
+                <fullName>CONFE - Conselho Federal de Estatística</fullName>
+                <default>false</default>
+                <label>CONFE - Conselho Federal de Estatística</label>
+            </value>
+            <value>
+                <fullName>CONFEA - Conselho Federal de Engenharia e Agronomia</fullName>
+                <default>false</default>
+                <label>CONFEA - Conselho Federal de Engenharia e Agronomia</label>
+            </value>
+            <value>
+                <fullName>CONFEF - Conselho Federal de Educação Física</fullName>
+                <default>false</default>
+                <label>CONFEF - Conselho Federal de Educação Física</label>
+            </value>
+            <value>
+                <fullName>CONFERE - Conselho Federal dos Representantes Comerciais</fullName>
+                <default>false</default>
+                <label>CONFERE - Conselho Federal dos Representantes Comerciais</label>
+            </value>
+            <value>
+                <fullName>CONRE - Conselho Regional de Estatística</fullName>
+                <default>false</default>
+                <label>CONRE - Conselho Regional de Estatística</label>
+            </value>
+            <value>
+                <fullName>CONRERP - Conselho Federal de Profissionais de Relações Públicas</fullName>
+                <default>false</default>
+                <label>CONRERP - Conselho Federal de Profissionais de Relações Públicas</label>
+            </value>
+            <value>
+                <fullName>CORE - Conselho Regional dos Representantes Comerciais</fullName>
+                <default>false</default>
+                <label>CORE - Conselho Regional dos Representantes Comerciais</label>
+            </value>
+            <value>
+                <fullName>CORECON - Conselho Regional de Economia</fullName>
+                <default>false</default>
+                <label>CORECON - Conselho Regional de Economia</label>
+            </value>
+            <value>
+                <fullName>COREM - Conselho Regional de Museologia</fullName>
+                <default>false</default>
+                <label>COREM - Conselho Regional de Museologia</label>
+            </value>
+            <value>
+                <fullName>COREN - Conselho Regional de Enfermagem</fullName>
+                <default>false</default>
+                <label>COREN - Conselho Regional de Enfermagem</label>
+            </value>
+            <value>
+                <fullName>CRA - Conselho Regional de Administração</fullName>
+                <default>false</default>
+                <label>CRA - Conselho Regional de Administração</label>
+            </value>
+            <value>
+                <fullName>CRAS - Centro de Referência de Assistência Social</fullName>
+                <default>false</default>
+                <label>CRAS - Centro de Referência de Assistência Social</label>
+            </value>
+            <value>
+                <fullName>CRB - Conselho Regional de Biblioteconomia</fullName>
+                <default>false</default>
+                <label>CRB - Conselho Regional de Biblioteconomia</label>
+            </value>
+            <value>
+                <fullName>CRBIO - Conselho Regional de Biologia</fullName>
+                <default>false</default>
+                <label>CRBIO - Conselho Regional de Biologia</label>
+            </value>
+            <value>
+                <fullName>CRBM - Conselho Regional de Biomedicina</fullName>
+                <default>false</default>
+                <label>CRBM - Conselho Regional de Biomedicina</label>
+            </value>
+            <value>
+                <fullName>CRC - Conselho Regional de Contabilidade</fullName>
+                <default>false</default>
+                <label>CRC - Conselho Regional de Contabilidade</label>
+            </value>
+            <value>
+                <fullName>CREA - Conselho Regional de Engenharia e Agronomia</fullName>
+                <default>false</default>
+                <label>CREA - Conselho Regional de Engenharia e Agronomia</label>
+            </value>
+            <value>
+                <fullName>CRECI - Conselho Regional de Corretores de Imóveis</fullName>
+                <default>false</default>
+                <label>CRECI - Conselho Regional de Corretores de Imóveis</label>
+            </value>
+            <value>
+                <fullName>CREF - Conselho Regional de Educação Física</fullName>
+                <default>false</default>
+                <label>CREF - Conselho Regional de Educação Física</label>
+            </value>
+            <value>
+                <fullName>CREFITO - Conselho Regional de Fisioterapia e Terapia Ocupacional</fullName>
+                <default>false</default>
+                <label>CREFITO - Conselho Regional de Fisioterapia e Terapia Ocupacional</label>
+            </value>
+            <value>
+                <fullName>CRESS - Conselho Regional de Serviço Social</fullName>
+                <default>false</default>
+                <label>CRESS - Conselho Regional de Serviço Social</label>
+            </value>
+            <value>
+                <fullName>CRF - Conselho Regional de Farmácia</fullName>
+                <default>false</default>
+                <label>CRF - Conselho Regional de Farmácia</label>
+            </value>
+            <value>
+                <fullName>CRFA - Conselho Regional de Fonoaudiologia</fullName>
+                <default>false</default>
+                <label>CRFA - Conselho Regional de Fonoaudiologia</label>
+            </value>
+            <value>
+                <fullName>CRM - Conselho Regional de Medicina</fullName>
+                <default>false</default>
+                <label>CRM - Conselho Regional de Medicina</label>
+            </value>
+            <value>
+                <fullName>CRMV - Conselho Regional de Medicina Veterinária</fullName>
+                <default>false</default>
+                <label>CRMV - Conselho Regional de Medicina Veterinária</label>
+            </value>
+            <value>
+                <fullName>CRN - Conselho Regional de Nutrição</fullName>
+                <default>false</default>
+                <label>CRN - Conselho Regional de Nutrição</label>
+            </value>
+            <value>
+                <fullName>CRO - Conselho Regional de Odontologia</fullName>
+                <default>false</default>
+                <label>CRO - Conselho Regional de Odontologia</label>
+            </value>
+            <value>
+                <fullName>CRP - Conselho Regional de Psicologia</fullName>
+                <default>false</default>
+                <label>CRP - Conselho Regional de Psicologia</label>
+            </value>
+            <value>
+                <fullName>CRPRE - Conselho Regional de Profissionais de Relações Públicas</fullName>
+                <default>false</default>
+                <label>CRPRE - Conselho Regional de Profissionais de Relações Públicas</label>
+            </value>
+            <value>
+                <fullName>CRQ - Conselho Regional de Química</fullName>
+                <default>false</default>
+                <label>CRQ - Conselho Regional de Química</label>
+            </value>
+            <value>
+                <fullName>CRT - Conselho Regional dos Técnicos Industriais</fullName>
+                <default>false</default>
+                <label>CRT - Conselho Regional dos Técnicos Industriais</label>
+            </value>
+            <value>
+                <fullName>CRTA - Conselho Regional de Técnicos de Administração</fullName>
+                <default>false</default>
+                <label>CRTA - Conselho Regional de Técnicos de Administração</label>
+            </value>
+            <value>
+                <fullName>CTPS - Carteira de Trabalho e Previdência Social</fullName>
+                <default>false</default>
+                <label>CTPS - Carteira de Trabalho e Previdência Social</label>
+            </value>
+            <value>
+                <fullName>CV - Cartório Civil</fullName>
+                <default>false</default>
+                <label>CV - Cartório Civil</label>
+            </value>
+            <value>
+                <fullName>DELEMIG - Delegacia de Polícia de Imigração</fullName>
+                <default>false</default>
+                <label>DELEMIG - Delegacia de Polícia de Imigração</label>
+            </value>
+            <value>
+                <fullName>DETRAN - Departamento Estadual de Trânsito</fullName>
+                <default>false</default>
+                <label>DETRAN - Departamento Estadual de Trânsito</label>
+            </value>
+            <value>
+                <fullName>DGPC - Diretoria Geral da Polícia Civil</fullName>
+                <default>false</default>
+                <label>DGPC - Diretoria Geral da Polícia Civil</label>
+            </value>
+            <value>
+                <fullName>DIC - Diretoria de Identificação Civil</fullName>
+                <default>false</default>
+                <label>DIC - Diretoria de Identificação Civil</label>
+            </value>
+            <value>
+                <fullName>DICC - Diretoria de Identificação Civil e Criminal</fullName>
+                <default>false</default>
+                <label>DICC - Diretoria de Identificação Civil e Criminal</label>
+            </value>
+            <value>
+                <fullName>DIREX - Diretoria Executiva</fullName>
+                <default>false</default>
+                <label>DIREX - Diretoria Executiva</label>
+            </value>
+            <value>
+                <fullName>DPF - Departamento de Polícia Federal</fullName>
+                <default>false</default>
+                <label>DPF - Departamento de Polícia Federal</label>
+            </value>
+            <value>
+                <fullName>DPMAF - Divisão de Polícia Marítima, Aérea e de Fronteiras</fullName>
+                <default>false</default>
+                <label>DPMAF - Divisão de Polícia Marítima, Aérea e de Fronteiras</label>
+            </value>
+            <value>
+                <fullName>DPT - Departamento de Polícia Técnica Geral</fullName>
+                <default>false</default>
+                <label>DPT - Departamento de Polícia Técnica Geral</label>
+            </value>
+            <value>
+                <fullName>DPTC - Departamento de Polícia Técnico Científica</fullName>
+                <default>false</default>
+                <label>DPTC - Departamento de Polícia Técnico Científica</label>
+            </value>
+            <value>
+                <fullName>DREX - Delegacia Regional Executiva</fullName>
+                <default>false</default>
+                <label>DREX - Delegacia Regional Executiva</label>
+            </value>
+            <value>
+                <fullName>DRT - Delegacia Regional do Trabalho</fullName>
+                <default>false</default>
+                <label>DRT - Delegacia Regional do Trabalho</label>
+            </value>
+            <value>
+                <fullName>EB - Exército Brasileiro</fullName>
+                <default>false</default>
+                <label>EB - Exército Brasileiro</label>
+            </value>
+            <value>
+                <fullName>FAB - Força Aérea Brasileira</fullName>
+                <default>false</default>
+                <label>FAB - Força Aérea Brasileira</label>
+            </value>
+            <value>
+                <fullName>FENAJ - Federação Nacional dos Jornalistas</fullName>
+                <default>false</default>
+                <label>FENAJ - Federação Nacional dos Jornalistas</label>
+            </value>
+            <value>
+                <fullName>FGTS - Fundo de Garantia do Tempo de Serviço</fullName>
+                <default>false</default>
+                <label>FGTS - Fundo de Garantia do Tempo de Serviço</label>
+            </value>
+            <value>
+                <fullName>FIPE - Fundação Instituto de Pesquisas Econômicas</fullName>
+                <default>false</default>
+                <label>FIPE - Fundação Instituto de Pesquisas Econômicas</label>
+            </value>
+            <value>
+                <fullName>FLS - Fundação Lyndolpho Silva</fullName>
+                <default>false</default>
+                <label>FLS - Fundação Lyndolpho Silva</label>
+            </value>
+            <value>
+                <fullName>FUNAI - Fundação Nacional do Índio</fullName>
+                <default>false</default>
+                <label>FUNAI - Fundação Nacional do Índio</label>
+            </value>
+            <value>
+                <fullName>GEJSP - Gerência de Estado de Justiça, Segurança Pública e Cidadania</fullName>
+                <default>false</default>
+                <label>GEJSP - Gerência de Estado de Justiça, Segurança Pública e Cidadania</label>
+            </value>
+            <value>
+                <fullName>GEJSPC - Gerência de Estado de Justiça, Segurança Pública e Cidadania</fullName>
+                <default>false</default>
+                <label>GEJSPC - Gerência de Estado de Justiça, Segurança Pública e Cidadania</label>
+            </value>
+            <value>
+                <fullName>GEJUSPC - Gerência de Estado de Justiça, Segurança Pública e Cidadania</fullName>
+                <default>false</default>
+                <label>GEJUSPC - Gerência de Estado de Justiça, Segurança Pública e Cidadania</label>
+            </value>
+            <value>
+                <fullName>GESP - Gerência de Estado de Segurança Pública</fullName>
+                <default>false</default>
+                <label>GESP - Gerência de Estado de Segurança Pública</label>
+            </value>
+            <value>
+                <fullName>GOVGO - Governo do Estado de Goiás</fullName>
+                <default>false</default>
+                <label>GOVGO - Governo do Estado de Goiás</label>
+            </value>
+            <value>
+                <fullName>I CLA - Carteira de Identidade Classista</fullName>
+                <default>false</default>
+                <label>I CLA - Carteira de Identidade Classista</label>
+            </value>
+            <value>
+                <fullName>ICP - Instituto de Polícia Científica</fullName>
+                <default>false</default>
+                <label>ICP - Instituto de Polícia Científica</label>
+            </value>
+            <value>
+                <fullName>IDAMP - Instituto de Identificação Dr. Aroldo Mendes Paiva</fullName>
+                <default>false</default>
+                <label>IDAMP - Instituto de Identificação Dr. Aroldo Mendes Paiva</label>
+            </value>
+            <value>
+                <fullName>IFP - Instituto Félix Pacheco</fullName>
+                <default>false</default>
+                <label>IFP - Instituto Félix Pacheco</label>
+            </value>
+            <value>
+                <fullName>IGP - Instituto Geral de Perícias</fullName>
+                <default>false</default>
+                <label>IGP - Instituto Geral de Perícias</label>
+            </value>
+            <value>
+                <fullName>IIACM - Instituto de Identificação Aderson Conceição de Melo</fullName>
+                <default>false</default>
+                <label>IIACM - Instituto de Identificação Aderson Conceição de Melo</label>
+            </value>
+            <value>
+                <fullName>IICC - Instituto de Identificação Civil e Criminal</fullName>
+                <default>false</default>
+                <label>IICC - Instituto de Identificação Civil e Criminal</label>
+            </value>
+            <value>
+                <fullName>IICCECF - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco</fullName>
+                <default>false</default>
+                <label>IICCECF - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco</label>
+            </value>
+            <value>
+                <fullName>IICM - Instituto de Identificação Carlos Menezes</fullName>
+                <default>false</default>
+                <label>IICM - Instituto de Identificação Carlos Menezes</label>
+            </value>
+            <value>
+                <fullName>IIGP - Instituto de Identificação Gonçalo Pereira</fullName>
+                <default>false</default>
+                <label>IIGP - Instituto de Identificação Gonçalo Pereira</label>
+            </value>
+            <value>
+                <fullName>IIJDM - Instituto de Identificação João de Deus Martins</fullName>
+                <default>false</default>
+                <label>IIJDM - Instituto de Identificação João de Deus Martins</label>
+            </value>
+            <value>
+                <fullName>IIPC - Instituto de Identificação da Polícia Civil</fullName>
+                <default>false</default>
+                <label>IIPC - Instituto de Identificação da Polícia Civil</label>
+            </value>
+            <value>
+                <fullName>IIPC - Instituto de Identificação Pedro Mello</fullName>
+                <default>false</default>
+                <label>IIPC - Instituto de Identificação Pedro Mello</label>
+            </value>
+            <value>
+                <fullName>IIRGD - Instituto de Identificação Ricardo Gumbleton Daunt</fullName>
+                <default>false</default>
+                <label>IIRGD - Instituto de Identificação Ricardo Gumbleton Daunt</label>
+            </value>
+            <value>
+                <fullName>IIRHM - Instituto de Identificação Raimundo Hermínio de Melo</fullName>
+                <default>false</default>
+                <label>IIRHM - Instituto de Identificação Raimundo Hermínio de Melo</label>
+            </value>
+            <value>
+                <fullName>IITB - Instituto de Identificação Tavares Buril</fullName>
+                <default>false</default>
+                <label>IITB - Instituto de Identificação Tavares Buril</label>
+            </value>
+            <value>
+                <fullName>IML - Instituto Médico-Legal</fullName>
+                <default>false</default>
+                <label>IML - Instituto Médico-Legal</label>
+            </value>
+            <value>
+                <fullName>INI - Instituto Nacional de Identificação</fullName>
+                <default>false</default>
+                <label>INI - Instituto Nacional de Identificação</label>
+            </value>
+            <value>
+                <fullName>IPF - Instituto Pereira Faustino</fullName>
+                <default>false</default>
+                <label>IPF - Instituto Pereira Faustino</label>
+            </value>
+            <value>
+                <fullName>ITCP - Instituto Técnico-Científico de Perícia</fullName>
+                <default>false</default>
+                <label>ITCP - Instituto Técnico-Científico de Perícia</label>
+            </value>
+            <value>
+                <fullName>ITEP - Instituto Técnico-Científico de Perícia</fullName>
+                <default>false</default>
+                <label>ITEP - Instituto Técnico-Científico de Perícia</label>
+            </value>
+            <value>
+                <fullName>MAER - Ministério da Aeronáutica</fullName>
+                <default>false</default>
+                <label>MAER - Ministério da Aeronáutica</label>
+            </value>
+            <value>
+                <fullName>MB - Marinha do Brasil</fullName>
+                <default>false</default>
+                <label>MB - Marinha do Brasil</label>
+            </value>
+            <value>
+                <fullName>MD - Ministério da Defesa</fullName>
+                <default>false</default>
+                <label>MD - Ministério da Defesa</label>
+            </value>
+            <value>
+                <fullName>MDS - Ministério da Cidadania</fullName>
+                <default>false</default>
+                <label>MDS - Ministério da Cidadania</label>
+            </value>
+            <value>
+                <fullName>MEC - Ministério da Educação e Cultura</fullName>
+                <default>false</default>
+                <label>MEC - Ministério da Educação e Cultura</label>
+            </value>
+            <value>
+                <fullName>MEX - Ministério do Exército</fullName>
+                <default>false</default>
+                <label>MEX - Ministério do Exército</label>
+            </value>
+            <value>
+                <fullName>MINDEF - Ministério da Defesa</fullName>
+                <default>false</default>
+                <label>MINDEF - Ministério da Defesa</label>
+            </value>
+            <value>
+                <fullName>MJ - Ministério da Justiça</fullName>
+                <default>false</default>
+                <label>MJ - Ministério da Justiça</label>
+            </value>
+            <value>
+                <fullName>MM - Ministério da Marinha</fullName>
+                <default>false</default>
+                <label>MM - Ministério da Marinha</label>
+            </value>
+            <value>
+                <fullName>MMA - Ministério da Marinha</fullName>
+                <default>false</default>
+                <label>MMA - Ministério da Marinha</label>
+            </value>
+            <value>
+                <fullName>MPAS - Ministério da Previdência e Assistência Social</fullName>
+                <default>false</default>
+                <label>MPAS - Ministério da Previdência e Assistência Social</label>
+            </value>
+            <value>
+                <fullName>MPE - Ministério Público Estadual</fullName>
+                <default>false</default>
+                <label>MPE - Ministério Público Estadual</label>
+            </value>
+            <value>
+                <fullName>MPF - Ministério Público Federal</fullName>
+                <default>false</default>
+                <label>MPF - Ministério Público Federal</label>
+            </value>
+            <value>
+                <fullName>MPT - Ministério Público do Trabalho</fullName>
+                <default>false</default>
+                <label>MPT - Ministério Público do Trabalho</label>
+            </value>
+            <value>
+                <fullName>MRE - Ministério das Relações Exteriores</fullName>
+                <default>false</default>
+                <label>MRE - Ministério das Relações Exteriores</label>
+            </value>
+            <value>
+                <fullName>MT - Ministério do Trabalho</fullName>
+                <default>false</default>
+                <label>MT - Ministério do Trabalho</label>
+            </value>
+            <value>
+                <fullName>MTE - Ministério da Economia</fullName>
+                <default>false</default>
+                <label>MTE - Ministério da Economia</label>
+            </value>
+            <value>
+                <fullName>MTPS - Ministério do Trabalho e Previdência Social</fullName>
+                <default>false</default>
+                <label>MTPS - Ministério do Trabalho e Previdência Social</label>
+            </value>
+            <value>
+                <fullName>NUMIG - Núcleo de Polícia de Imigração</fullName>
+                <default>false</default>
+                <label>NUMIG - Núcleo de Polícia de Imigração</label>
+            </value>
+            <value>
+                <fullName>OAB - Ordem dos Advogados do Brasil</fullName>
+                <default>false</default>
+                <label>OAB - Ordem dos Advogados do Brasil</label>
+            </value>
+            <value>
+                <fullName>OMB - Ordens dos Músicos do Brasil</fullName>
+                <default>false</default>
+                <label>OMB - Ordens dos Músicos do Brasil</label>
+            </value>
+            <value>
+                <fullName>PC - Polícia Civil</fullName>
+                <default>false</default>
+                <label>PC - Polícia Civil</label>
+            </value>
+            <value>
+                <fullName>PF - Polícia Federal</fullName>
+                <default>false</default>
+                <label>PF - Polícia Federal</label>
+            </value>
+            <value>
+                <fullName>PGFN - Procuradoria Geral da Fazenda Nacional</fullName>
+                <default>false</default>
+                <label>PGFN - Procuradoria Geral da Fazenda Nacional</label>
+            </value>
+            <value>
+                <fullName>PM - Polícia Militar</fullName>
+                <default>false</default>
+                <label>PM - Polícia Militar</label>
+            </value>
+            <value>
+                <fullName>POLITEC - Perícia Oficial e Identificação Técnica</fullName>
+                <default>false</default>
+                <label>POLITEC - Perícia Oficial e Identificação Técnica</label>
+            </value>
+            <value>
+                <fullName>PRF - Polícia Rodoviária Federal</fullName>
+                <default>false</default>
+                <label>PRF - Polícia Rodoviária Federal</label>
+            </value>
+            <value>
+                <fullName>PTC - Polícia Tecnico-Científica</fullName>
+                <default>false</default>
+                <label>PTC - Polícia Tecnico-Científica</label>
+            </value>
+            <value>
+                <fullName>SCC - Secretaria de Estado da Casa Civil</fullName>
+                <default>false</default>
+                <label>SCC - Secretaria de Estado da Casa Civil</label>
+            </value>
+            <value>
+                <fullName>SCJDS - Secretaria Coordenadora de Justiça e Defesa Social</fullName>
+                <default>false</default>
+                <label>SCJDS - Secretaria Coordenadora de Justiça e Defesa Social</label>
+            </value>
+            <value>
+                <fullName>SDS - Secretaria de Defesa Social</fullName>
+                <default>false</default>
+                <label>SDS - Secretaria de Defesa Social</label>
+            </value>
+            <value>
+                <fullName>SECC - Secretaria de Estado da Casa Civil</fullName>
+                <default>false</default>
+                <label>SECC - Secretaria de Estado da Casa Civil</label>
+            </value>
+            <value>
+                <fullName>SECCDE - Secretaria de Estado da Casa Civil e Desenvolvimento Econômico</fullName>
+                <default>false</default>
+                <label>SECCDE - Secretaria de Estado da Casa Civil e Desenvolvimento Econômico</label>
+            </value>
+            <value>
+                <fullName>SEDS - Secretaria de Estado da Defesa Social</fullName>
+                <default>false</default>
+                <label>SEDS - Secretaria de Estado da Defesa Social</label>
+            </value>
+            <value>
+                <fullName>SEGUP - Secretaria de Estado da Segurança Pública e da Defesa Social</fullName>
+                <default>false</default>
+                <label>SEGUP - Secretaria de Estado da Segurança Pública e da Defesa Social</label>
+            </value>
+            <value>
+                <fullName>SEJSP - Secretaria de Estado de Justiça e Segurança Pública</fullName>
+                <default>false</default>
+                <label>SEJSP - Secretaria de Estado de Justiça e Segurança Pública</label>
+            </value>
+            <value>
+                <fullName>SEJUC - Secretaria de Estado da Justica</fullName>
+                <default>false</default>
+                <label>SEJUC - Secretaria de Estado da Justica</label>
+            </value>
+            <value>
+                <fullName>SEJUSP - Secretaria de Estado de Justiça e Segurança Pública</fullName>
+                <default>false</default>
+                <label>SEJUSP - Secretaria de Estado de Justiça e Segurança Pública</label>
+            </value>
+            <value>
+                <fullName>SEPC - Secretaria de Estado da Polícia Civil</fullName>
+                <default>false</default>
+                <label>SEPC - Secretaria de Estado da Polícia Civil</label>
+            </value>
+            <value>
+                <fullName>SES - Secretaria de Estado da Segurança</fullName>
+                <default>false</default>
+                <label>SES - Secretaria de Estado da Segurança</label>
+            </value>
+            <value>
+                <fullName>SESC - Secretaria de Estado da Segurança e Cidadania</fullName>
+                <default>false</default>
+                <label>SESC - Secretaria de Estado da Segurança e Cidadania</label>
+            </value>
+            <value>
+                <fullName>SESDC - Secretaria de Estado da Segurança, Defesa e Cidadania</fullName>
+                <default>false</default>
+                <label>SESDC - Secretaria de Estado da Segurança, Defesa e Cidadania</label>
+            </value>
+            <value>
+                <fullName>SESDEC - Secretaria de Estado da Segurança, Defesa e Cidadania</fullName>
+                <default>false</default>
+                <label>SESDEC - Secretaria de Estado da Segurança, Defesa e Cidadania</label>
+            </value>
+            <value>
+                <fullName>SESEG - Secretaria Estadual de Segurança</fullName>
+                <default>false</default>
+                <label>SESEG - Secretaria Estadual de Segurança</label>
+            </value>
+            <value>
+                <fullName>SESP - Secretaria de Estado da Segurança Pública</fullName>
+                <default>false</default>
+                <label>SESP - Secretaria de Estado da Segurança Pública</label>
+            </value>
+            <value>
+                <fullName>SESPAP - Secretaria de Estado da Segurança Pública e Administração Penitenciária</fullName>
+                <default>false</default>
+                <label>SESPAP - Secretaria de Estado da Segurança Pública e Administração Penitenciária</label>
+            </value>
+            <value>
+                <fullName>SESPDC - Secretaria de Estado de Segurança Publica e Defesa do Cidadão</fullName>
+                <default>false</default>
+                <label>SESPDC - Secretaria de Estado de Segurança Publica e Defesa do Cidadão</label>
+            </value>
+            <value>
+                <fullName>SESPDS - Secretaria de Estado de Segurança Pública e Defesa Social</fullName>
+                <default>false</default>
+                <label>SESPDS - Secretaria de Estado de Segurança Pública e Defesa Social</label>
+            </value>
+            <value>
+                <fullName>SGPC - Superintendência Geral de Polícia Civil</fullName>
+                <default>false</default>
+                <label>SGPC - Superintendência Geral de Polícia Civil</label>
+            </value>
+            <value>
+                <fullName>SGPJ - Superintendência Geral de Polícia Judiciária</fullName>
+                <default>false</default>
+                <label>SGPJ - Superintendência Geral de Polícia Judiciária</label>
+            </value>
+            <value>
+                <fullName>SIM - Serviço de Identificação da Marinha</fullName>
+                <default>false</default>
+                <label>SIM - Serviço de Identificação da Marinha</label>
+            </value>
+            <value>
+                <fullName>SJ - Secretaria da Justiça</fullName>
+                <default>false</default>
+                <label>SJ - Secretaria da Justiça</label>
+            </value>
+            <value>
+                <fullName>SJCDH - Secretaria da Justiça e dos Direitos Humanos</fullName>
+                <default>false</default>
+                <label>SJCDH - Secretaria da Justiça e dos Direitos Humanos</label>
+            </value>
+            <value>
+                <fullName>SJDS - Secretaria Coordenadora de Justiça e Defesa Social</fullName>
+                <default>false</default>
+                <label>SJDS - Secretaria Coordenadora de Justiça e Defesa Social</label>
+            </value>
+            <value>
+                <fullName>SJS - Secretaria da Justiça e Segurança</fullName>
+                <default>false</default>
+                <label>SJS - Secretaria da Justiça e Segurança</label>
+            </value>
+            <value>
+                <fullName>SJTC - Secretaria da Justiça do Trabalho e Cidadania</fullName>
+                <default>false</default>
+                <label>SJTC - Secretaria da Justiça do Trabalho e Cidadania</label>
+            </value>
+            <value>
+                <fullName>SJTS - Secretaria da Justiça do Trabalho e Segurança</fullName>
+                <default>false</default>
+                <label>SJTS - Secretaria da Justiça do Trabalho e Segurança</label>
+            </value>
+            <value>
+                <fullName>SNJ - Secretaria Nacional de Justiça / Departamento de Estrangeiros</fullName>
+                <default>false</default>
+                <label>SNJ - Secretaria Nacional de Justiça / Departamento de Estrangeiros</label>
+            </value>
+            <value>
+                <fullName>SPMAF - Serviço de Polícia Marítima, Aérea e de Fronteiras</fullName>
+                <default>false</default>
+                <label>SPMAF - Serviço de Polícia Marítima, Aérea e de Fronteiras</label>
+            </value>
+            <value>
+                <fullName>SPTC - Secretaria de Polícia Técnico-Científica</fullName>
+                <default>false</default>
+                <label>SPTC - Secretaria de Polícia Técnico-Científica</label>
+            </value>
+            <value>
+                <fullName>SRDPF - Superintendência Regional do Departamento de Polícia Federal</fullName>
+                <default>false</default>
+                <label>SRDPF - Superintendência Regional do Departamento de Polícia Federal</label>
+            </value>
+            <value>
+                <fullName>SRF - Receita Federal</fullName>
+                <default>false</default>
+                <label>SRF - Receita Federal</label>
+            </value>
+            <value>
+                <fullName>SRTE - Superintendência Regional do Trabalho</fullName>
+                <default>false</default>
+                <label>SRTE - Superintendência Regional do Trabalho</label>
+            </value>
+            <value>
+                <fullName>SSDC - Secretaria da Segurança, Defesa e Cidadania</fullName>
+                <default>false</default>
+                <label>SSDC - Secretaria da Segurança, Defesa e Cidadania</label>
+            </value>
+            <value>
+                <fullName>SSDS - Secretaria da Segurança e da Defesa Social</fullName>
+                <default>false</default>
+                <label>SSDS - Secretaria da Segurança e da Defesa Social</label>
+            </value>
+            <value>
+                <fullName>SSI - Secretaria de Segurança e Informações</fullName>
+                <default>false</default>
+                <label>SSI - Secretaria de Segurança e Informações</label>
+            </value>
+            <value>
+                <fullName>SSP - Secretaria de Segurança Pública</fullName>
+                <default>false</default>
+                <label>SSP - Secretaria de Segurança Pública</label>
+            </value>
+            <value>
+                <fullName>SSPCGP - Secretaria de Segurança Pública e Coordenadoria Geral de Perícias</fullName>
+                <default>false</default>
+                <label>SSPCGP - Secretaria de Segurança Pública e Coordenadoria Geral de Perícias</label>
+            </value>
+            <value>
+                <fullName>SSPDC - Secretaria de Segurança Pública e Defesa do Cidadão</fullName>
+                <default>false</default>
+                <label>SSPDC - Secretaria de Segurança Pública e Defesa do Cidadão</label>
+            </value>
+            <value>
+                <fullName>SSPDS - Secretaria de Segurança Pública e Defesa Social</fullName>
+                <default>false</default>
+                <label>SSPDS - Secretaria de Segurança Pública e Defesa Social</label>
+            </value>
+            <value>
+                <fullName>SSPPC - Secretaria de Segurança Pública Polícia Civil</fullName>
+                <default>false</default>
+                <label>SSPPC - Secretaria de Segurança Pública Polícia Civil</label>
+            </value>
+            <value>
+                <fullName>SUSEP - Superintendência de Seguros Privados</fullName>
+                <default>false</default>
+                <label>SUSEP - Superintendência de Seguros Privados</label>
+            </value>
+            <value>
+                <fullName>SUSEPE - Superintendência dos Serviços Penitenciários</fullName>
+                <default>false</default>
+                <label>SUSEPE - Superintendência dos Serviços Penitenciários</label>
+            </value>
+            <value>
+                <fullName>TJ - Tribunal de Justiça</fullName>
+                <default>false</default>
+                <label>TJ - Tribunal de Justiça</label>
+            </value>
+            <value>
+                <fullName>TJAEM - Tribunal Arbitral e Mediação dos Estados Brasileiros</fullName>
+                <default>false</default>
+                <label>TJAEM - Tribunal Arbitral e Mediação dos Estados Brasileiros</label>
+            </value>
+            <value>
+                <fullName>TRE - Tribunal Regional Eleitoral</fullName>
+                <default>false</default>
+                <label>TRE - Tribunal Regional Eleitoral</label>
+            </value>
+            <value>
+                <fullName>TRF - Tribunal Regional Federal</fullName>
+                <default>false</default>
+                <label>TRF - Tribunal Regional Federal</label>
+            </value>
+            <value>
+                <fullName>TSE - Tribunal Superior Eleitoral</fullName>
+                <default>false</default>
+                <label>TSE - Tribunal Superior Eleitoral</label>
+            </value>
+            <value>
+                <fullName>XXX - Orgão Estrangeiro</fullName>
+                <default>false</default>
+                <label>XXX - Orgão Estrangeiro</label>
+            </value>
+            <value>
+                <fullName>ZZZ - Outro</fullName>
+                <default>false</default>
+                <label>ZZZ - Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

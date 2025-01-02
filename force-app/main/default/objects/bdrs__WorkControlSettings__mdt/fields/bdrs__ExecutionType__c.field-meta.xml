@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bdrs__ExecutionType__c</fullName>
+    <deprecated>false</deprecated>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Execution Type</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Deferred</fullName>
+                <default>true</default>
+                <label>Deferred</label>
+            </value>
+            <value>
+                <fullName>Immediate</fullName>
+                <default>false</default>
+                <label>Immediate</label>
+            </value>
+            <value>
+                <fullName>Immediate Callout</fullName>
+                <default>false</default>
+                <label>Immediate Callout</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

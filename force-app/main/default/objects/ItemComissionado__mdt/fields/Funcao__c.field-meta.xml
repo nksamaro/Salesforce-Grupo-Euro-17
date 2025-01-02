@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funcao__c</fullName>
+    <deprecated>false</deprecated>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Função</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gerente de negócio</fullName>
+                <default>true</default>
+                <label>Gerente de negócio</label>
+            </value>
+            <value>
+                <fullName>Gerente geral</fullName>
+                <default>false</default>
+                <label>Gerente geral</label>
+            </value>
+            <value>
+                <fullName>Superintendente</fullName>
+                <default>false</default>
+                <label>Superintendente</label>
+            </value>
+            <value>
+                <fullName>Diretoria</fullName>
+                <default>false</default>
+                <label>Diretoria</label>
+            </value>
+            <value>
+                <fullName>Vice presidencia</fullName>
+                <default>false</default>
+                <label>Vice presidencia</label>
+            </value>
+            <value>
+                <fullName>Presidente</fullName>
+                <default>false</default>
+                <label>Presidente</label>
+            </value>
+            <value>
+                <fullName>Ex gerente parceiro</fullName>
+                <default>false</default>
+                <label>Ex gerente parceiro</label>
+            </value>
+            <value>
+                <fullName>Ex gerente inativo</fullName>
+                <default>false</default>
+                <label>Ex gerente inativo</label>
+            </value>
+            <value>
+                <fullName>Ex gerente exceção</fullName>
+                <default>false</default>
+                <label>Ex gerente exceção</label>
+            </value>
+            <value>
+                <fullName>Célula de retenção</fullName>
+                <default>false</default>
+                <label>Célula de retenção</label>
+            </value>
+            <value>
+                <fullName>Time de relacionamento</fullName>
+                <default>false</default>
+                <label>Time de relacionamento</label>
+            </value>
+            <value>
+                <fullName>Gerente de relacionamento principal</fullName>
+                <default>false</default>
+                <label>Gerente de relacionamento principal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

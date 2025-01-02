@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmNegociacaoCaptacaoInvestimento</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Status, &quot;Em negociação&quot;),
+  OR(
+    ISBLANK( ValorEstimado__c ),
+    ISBLANK(DataPrevistaAporte__c)
+  )
+)</errorConditionFormula>
+    <errorMessage>Para avançar, preencha os campos &quot;Data Prevista do Aporte&quot; e &quot;Valor estimado de investimento&quot;</errorMessage>
+</ValidationRule>

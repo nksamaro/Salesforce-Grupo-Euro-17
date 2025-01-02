@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banco__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Banco</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Banco do Brasil (BB)</fullName>
+                <default>false</default>
+                <label>Banco do Brasil (BB)</label>
+            </value>
+            <value>
+                <fullName>Caixa Econômica Federal (CEF)</fullName>
+                <default>false</default>
+                <label>Caixa Econômica Federal (CEF)</label>
+            </value>
+            <value>
+                <fullName>Banco Bradesco</fullName>
+                <default>false</default>
+                <label>Banco Bradesco</label>
+            </value>
+            <value>
+                <fullName>Banco Itaú Unibanco</fullName>
+                <default>false</default>
+                <label>Banco Itaú Unibanco</label>
+            </value>
+            <value>
+                <fullName>Banco Santander Brasil</fullName>
+                <default>false</default>
+                <label>Banco Santander Brasil</label>
+            </value>
+            <value>
+                <fullName>Banco BTG Pactual</fullName>
+                <default>false</default>
+                <label>Banco BTG Pactual</label>
+            </value>
+            <value>
+                <fullName>Banco Safra</fullName>
+                <default>false</default>
+                <label>Banco Safra</label>
+            </value>
+            <value>
+                <fullName>Banco Votorantim</fullName>
+                <default>false</default>
+                <label>Banco Votorantim</label>
+            </value>
+            <value>
+                <fullName>Banco Original</fullName>
+                <default>false</default>
+                <label>Banco Original</label>
+            </value>
+            <value>
+                <fullName>Banco Inter</fullName>
+                <default>false</default>
+                <label>Banco Inter</label>
+            </value>
+            <value>
+                <fullName>Banco PAN</fullName>
+                <default>false</default>
+                <label>Banco PAN</label>
+            </value>
+            <value>
+                <fullName>Banco Neon</fullName>
+                <default>false</default>
+                <label>Banco Neon</label>
+            </value>
+            <value>
+                <fullName>Banco Mercantil do Brasil</fullName>
+                <default>false</default>
+                <label>Banco Mercantil do Brasil</label>
+            </value>
+            <value>
+                <fullName>Banco Daycoval</fullName>
+                <default>false</default>
+                <label>Banco Daycoval</label>
+            </value>
+            <value>
+                <fullName>Banco BMG</fullName>
+                <default>false</default>
+                <label>Banco BMG</label>
+            </value>
+            <value>
+                <fullName>Banco Pine</fullName>
+                <default>false</default>
+                <label>Banco Pine</label>
+            </value>
+            <value>
+                <fullName>Banco Sofisa Direto</fullName>
+                <default>false</default>
+                <label>Banco Sofisa Direto</label>
+            </value>
+            <value>
+                <fullName>Banco Modal</fullName>
+                <default>false</default>
+                <label>Banco Modal</label>
+            </value>
+            <value>
+                <fullName>Banco C6</fullName>
+                <default>false</default>
+                <label>Banco C6</label>
+            </value>
+            <value>
+                <fullName>Banco Digio</fullName>
+                <default>false</default>
+                <label>Banco Digio</label>
+            </value>
+            <value>
+                <fullName>246-Banco ABC Brasil S.A.</fullName>
+                <default>false</default>
+                <label>246-Banco ABC Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>299-Banco Afinz S.A. Banco Múltiplo</fullName>
+                <default>false</default>
+                <label>299-Banco Afinz S.A. Banco Múltiplo</label>
+            </value>
+            <value>
+                <fullName>121-Banco Agibank S.A.</fullName>
+                <default>false</default>
+                <label>121-Banco Agibank S.A.</label>
+            </value>
+            <value>
+                <fullName>025-Banco Alfa S.A.</fullName>
+                <default>false</default>
+                <label>025-Banco Alfa S.A.</label>
+            </value>
+            <value>
+                <fullName>065-Banco Andbank (Brasil) S.A.</fullName>
+                <default>false</default>
+                <label>065-Banco Andbank (Brasil) S.A.</label>
+            </value>
+            <value>
+                <fullName>084 - Banco uniprime</fullName>
+                <default>false</default>
+                <label>084 - Banco uniprime</label>
+            </value>
+            <value>
+                <fullName>096-Banco B3 S.A.</fullName>
+                <default>false</default>
+                <label>096-Banco B3 S.A.</label>
+            </value>
+            <value>
+                <fullName>024-Banco BANDEPE S.A.</fullName>
+                <default>false</default>
+                <label>024-Banco BANDEPE S.A.</label>
+            </value>
+            <value>
+                <fullName>318-Banco BMG S.A.</fullName>
+                <default>false</default>
+                <label>318-Banco BMG S.A.</label>
+            </value>
+            <value>
+                <fullName>752-Banco BNP Paribas Brasil S.A.</fullName>
+                <default>false</default>
+                <label>752-Banco BNP Paribas Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>107-Banco BOCOM BBM S.A.</fullName>
+                <default>false</default>
+                <label>107-Banco BOCOM BBM S.A.</label>
+            </value>
+            <value>
+                <fullName>063-Banco Bradescard S.A.</fullName>
+                <default>false</default>
+                <label>063-Banco Bradescard S.A.</label>
+            </value>
+            <value>
+                <fullName>036-Banco Bradesco BBI S.A.</fullName>
+                <default>false</default>
+                <label>036-Banco Bradesco BBI S.A.</label>
+            </value>
+            <value>
+                <fullName>394-Banco Bradesco Financiamentos S.A.</fullName>
+                <default>false</default>
+                <label>394-Banco Bradesco Financiamentos S.A.</label>
+            </value>
+            <value>
+                <fullName>237-Banco Bradesco S.A.</fullName>
+                <default>false</default>
+                <label>237-Banco Bradesco S.A.</label>
+            </value>
+            <value>
+                <fullName>218-Banco BS2 S.A.</fullName>
+                <default>false</default>
+                <label>218-Banco BS2 S.A.</label>
+            </value>
+            <value>
+                <fullName>208-Banco BTG Pactual S.A.</fullName>
+                <default>false</default>
+                <label>208-Banco BTG Pactual S.A.</label>
+            </value>
+            <value>
+                <fullName>626-Banco C6 Consignado S.A.</fullName>
+                <default>false</default>
+                <label>626-Banco C6 Consignado S.A.</label>
+            </value>
+            <value>
+                <fullName>Baco C6 S.A.</fullName>
+                <default>false</default>
+                <label>Baco C6 S.A.</label>
+            </value>
+            <value>
+                <fullName>473-Banco Caixa Geral - Brasil S.A.</fullName>
+                <default>false</default>
+                <label>473-Banco Caixa Geral - Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>040-Banco Cargill S.A.</fullName>
+                <default>false</default>
+                <label>040-Banco Cargill S.A.</label>
+            </value>
+            <value>
+                <fullName>739-Banco Cetelem S.A.</fullName>
+                <default>false</default>
+                <label>739-Banco Cetelem S.A.</label>
+            </value>
+            <value>
+                <fullName>233-Banco Cifra S.A.</fullName>
+                <default>false</default>
+                <label>233-Banco Cifra S.A.</label>
+            </value>
+            <value>
+                <fullName>745-Banco Citibank S.A.</fullName>
+                <default>false</default>
+                <label>745-Banco Citibank S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco CNH Industrial Capital S.A.</fullName>
+                <default>false</default>
+                <label>Banco CNH Industrial Capital S.A.</label>
+            </value>
+            <value>
+                <fullName>756-Banco Cooperativo Sicoob S.A.</fullName>
+                <default>false</default>
+                <label>756-Banco Cooperativo Sicoob S.A.</label>
+            </value>
+            <value>
+                <fullName>748-Banco Cooperativo Sicredi S.A.</fullName>
+                <default>false</default>
+                <label>748-Banco Cooperativo Sicredi S.A.</label>
+            </value>
+            <value>
+                <fullName>222-Banco Credit Agricole Brasil S.A.</fullName>
+                <default>false</default>
+                <label>222-Banco Credit Agricole Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>505-Banco Credit Suisse (Brasil) S.A.</fullName>
+                <default>false</default>
+                <label>505-Banco Credit Suisse (Brasil) S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco CSF S.A.</fullName>
+                <default>false</default>
+                <label>Banco CSF S.A.</label>
+            </value>
+            <value>
+                <fullName>003-Banco da Amazônia S.A.</fullName>
+                <default>false</default>
+                <label>003-Banco da Amazônia S.A.</label>
+            </value>
+            <value>
+                <fullName>083-Banco da China Brasil S.A.</fullName>
+                <default>false</default>
+                <label>083-Banco da China Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>707-Banco Daycoval S.A.</fullName>
+                <default>false</default>
+                <label>707-Banco Daycoval S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco de Lage Landen Brasil S.A.</fullName>
+                <default>false</default>
+                <label>Banco de Lage Landen Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>654-Banco Digimais S.A.</fullName>
+                <default>false</default>
+                <label>654-Banco Digimais S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco Digio S.A.</fullName>
+                <default>false</default>
+                <label>Banco Digio S.A.</label>
+            </value>
+            <value>
+                <fullName>001-Banco do Brasil S.A.</fullName>
+                <default>false</default>
+                <label>001-Banco do Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>047-Banco do Estado de Sergipe S.A.</fullName>
+                <default>false</default>
+                <label>047-Banco do Estado de Sergipe S.A.</label>
+            </value>
+            <value>
+                <fullName>037-Banco do Estado do Pará S.A.</fullName>
+                <default>false</default>
+                <label>037-Banco do Estado do Pará S.A.</label>
+            </value>
+            <value>
+                <fullName>041-Banco do Estado do Rio Grande do Sul S.A.</fullName>
+                <default>false</default>
+                <label>041-Banco do Estado do Rio Grande do Sul S.A.</label>
+            </value>
+            <value>
+                <fullName>004-Banco do Nordeste do Brasil S.A.</fullName>
+                <default>false</default>
+                <label>004-Banco do Nordeste do Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>224-Banco Fibra S.A.</fullName>
+                <default>false</default>
+                <label>224-Banco Fibra S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco Fidis S.A.</fullName>
+                <default>false</default>
+                <label>Banco Fidis S.A.</label>
+            </value>
+            <value>
+                <fullName>094-Banco Finaxis S.A.</fullName>
+                <default>false</default>
+                <label>094-Banco Finaxis S.A.</label>
+            </value>
+            <value>
+                <fullName>125-Banco Genial S.A.</fullName>
+                <default>false</default>
+                <label>125-Banco Genial S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco GM S.A.</fullName>
+                <default>false</default>
+                <label>Banco GM S.A.</label>
+            </value>
+            <value>
+                <fullName>612-Banco Guanabara S.A.</fullName>
+                <default>false</default>
+                <label>612-Banco Guanabara S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco IBM S.A.</fullName>
+                <default>false</default>
+                <label>Banco IBM S.A.</label>
+            </value>
+            <value>
+                <fullName>012-Banco Inbursa S.A.</fullName>
+                <default>false</default>
+                <label>012-Banco Inbursa S.A.</label>
+            </value>
+            <value>
+                <fullName>604-Banco Industrial do Brasil S.A.</fullName>
+                <default>false</default>
+                <label>604-Banco Industrial do Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>077-Banco Inter S.A.</fullName>
+                <default>false</default>
+                <label>077-Banco Inter S.A.</label>
+            </value>
+            <value>
+                <fullName>249-Banco Investcred Unibanco S.A.</fullName>
+                <default>false</default>
+                <label>249-Banco Investcred Unibanco S.A.</label>
+            </value>
+            <value>
+                <fullName>184-Banco Itaú BBA S.A.</fullName>
+                <default>false</default>
+                <label>184-Banco Itaú BBA S.A.</label>
+            </value>
+            <value>
+                <fullName>029-Banco Itaú Consignado S.A.</fullName>
+                <default>false</default>
+                <label>029-Banco Itaú Consignado S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco Itaú Veículos S.A.</fullName>
+                <default>false</default>
+                <label>Banco Itaú Veículos S.A.</label>
+            </value>
+            <value>
+                <fullName>479-Banco ItauBank S.A</fullName>
+                <default>false</default>
+                <label>479-Banco ItauBank S.A</label>
+            </value>
+            <value>
+                <fullName>Banco Itaucard S.A.</fullName>
+                <default>false</default>
+                <label>Banco Itaucard S.A.</label>
+            </value>
+            <value>
+                <fullName>376-Banco J. P. Morgan S.A.</fullName>
+                <default>false</default>
+                <label>376-Banco J. P. Morgan S.A.</label>
+            </value>
+            <value>
+                <fullName>074-Banco J. Safra S.A.</fullName>
+                <default>false</default>
+                <label>074-Banco J. Safra S.A.</label>
+            </value>
+            <value>
+                <fullName>217-Banco John Deere S.A.</fullName>
+                <default>false</default>
+                <label>217-Banco John Deere S.A.</label>
+            </value>
+            <value>
+                <fullName>630-Banco Letsbank S.A.</fullName>
+                <default>false</default>
+                <label>630-Banco Letsbank S.A.</label>
+            </value>
+            <value>
+                <fullName>600-Banco Luso Brasileiro S.A.</fullName>
+                <default>false</default>
+                <label>600-Banco Luso Brasileiro S.A.</label>
+            </value>
+            <value>
+                <fullName>243-Banco Master S.A.</fullName>
+                <default>false</default>
+                <label>243-Banco Master S.A.</label>
+            </value>
+            <value>
+                <fullName>389-Banco Mercantil do Brasil S.A.</fullName>
+                <default>false</default>
+                <label>389-Banco Mercantil do Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>370-Banco Mizuho do Brasil S.A.</fullName>
+                <default>false</default>
+                <label>370-Banco Mizuho do Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>301 - Dock Instituição De Pagamento S.A</fullName>
+                <default>false</default>
+                <label>301 - Dock Instituição De Pagamento S.A</label>
+            </value>
+            <value>
+                <fullName>746-Banco Modal S.A.</fullName>
+                <default>false</default>
+                <label>746-Banco Modal S.A.</label>
+            </value>
+            <value>
+                <fullName>066-Banco Morgan Stanley S.A.</fullName>
+                <default>false</default>
+                <label>066-Banco Morgan Stanley S.A.</label>
+            </value>
+            <value>
+                <fullName>456-Banco MUFG Brasil S.A.</fullName>
+                <default>false</default>
+                <label>456-Banco MUFG Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>007-Banco Nacional de Desenvolvimento Econômico e Social - BNDES</fullName>
+                <default>false</default>
+                <label>007-Banco Nacional de Desenvolvimento Econômico e Social - BNDES</label>
+            </value>
+            <value>
+                <fullName>212-Banco Original S.A.</fullName>
+                <default>false</default>
+                <label>212-Banco Original S.A.</label>
+            </value>
+            <value>
+                <fullName>623-Banco PAN S.A.</fullName>
+                <default>false</default>
+                <label>623-Banco PAN S.A.</label>
+            </value>
+            <value>
+                <fullName>611-Banco Paulista S.A.</fullName>
+                <default>false</default>
+                <label>611-Banco Paulista S.A.</label>
+            </value>
+            <value>
+                <fullName>643-Banco Pine S.A.</fullName>
+                <default>false</default>
+                <label>643-Banco Pine S.A.</label>
+            </value>
+            <value>
+                <fullName>747-Banco Rabobank International Brasil S.A.</fullName>
+                <default>false</default>
+                <label>747-Banco Rabobank International Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco RCI Brasil S.A.</fullName>
+                <default>false</default>
+                <label>Banco RCI Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>633-Banco Rendimento S.A.</fullName>
+                <default>false</default>
+                <label>633-Banco Rendimento S.A.</label>
+            </value>
+            <value>
+                <fullName>120-Banco Rodobens S.A.</fullName>
+                <default>false</default>
+                <label>120-Banco Rodobens S.A.</label>
+            </value>
+            <value>
+                <fullName>422-Banco Safra S.A.</fullName>
+                <default>false</default>
+                <label>422-Banco Safra S.A.</label>
+            </value>
+            <value>
+                <fullName>033-Banco Santander (Brasil) S.A.</fullName>
+                <default>false</default>
+                <label>033-Banco Santander (Brasil) S.A.</label>
+            </value>
+            <value>
+                <fullName>743-Banco Semear S.A.</fullName>
+                <default>false</default>
+                <label>743-Banco Semear S.A.</label>
+            </value>
+            <value>
+                <fullName>276-Banco Senff S.A.</fullName>
+                <default>false</default>
+                <label>276-Banco Senff S.A.</label>
+            </value>
+            <value>
+                <fullName>366-Banco Société Générale Brasil S.A.</fullName>
+                <default>false</default>
+                <label>366-Banco Société Générale Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>464-Banco Sumitomo Mitsui Brasileiro S.A.</fullName>
+                <default>false</default>
+                <label>464-Banco Sumitomo Mitsui Brasileiro S.A.</label>
+            </value>
+            <value>
+                <fullName>082-Banco Topázio S.A.</fullName>
+                <default>false</default>
+                <label>082-Banco Topázio S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco Toyota do Brasil S.A.</fullName>
+                <default>false</default>
+                <label>Banco Toyota do Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>634-Banco Triângulo S.A.</fullName>
+                <default>false</default>
+                <label>634-Banco Triângulo S.A.</label>
+            </value>
+            <value>
+                <fullName>653-Banco Voiter S.A.</fullName>
+                <default>false</default>
+                <label>653-Banco Voiter S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco Volkswagen S.A.</fullName>
+                <default>false</default>
+                <label>Banco Volkswagen S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco Volvo Brasil S.A.</fullName>
+                <default>false</default>
+                <label>Banco Volvo Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>655-Banco Votorantim S.A.</fullName>
+                <default>false</default>
+                <label>655-Banco Votorantim S.A.</label>
+            </value>
+            <value>
+                <fullName>610-Banco VR S.A.</fullName>
+                <default>false</default>
+                <label>610-Banco VR S.A.</label>
+            </value>
+            <value>
+                <fullName>119-Banco Western Union do Brasil S.A.</fullName>
+                <default>false</default>
+                <label>119-Banco Western Union do Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>348-Banco XP S.A.</fullName>
+                <default>false</default>
+                <label>348-Banco XP S.A.</label>
+            </value>
+            <value>
+                <fullName>Banco Yamaha Motor do Brasil S.A.</fullName>
+                <default>false</default>
+                <label>Banco Yamaha Motor do Brasil S.A.</label>
+            </value>
+            <value>
+                <fullName>021-BANESTES S.A. Banco do Estado do Espírito Santo</fullName>
+                <default>false</default>
+                <label>021-BANESTES S.A. Banco do Estado do Espírito Santo</label>
+            </value>
+            <value>
+                <fullName>755-Bank of America Merrill Lynch Banco Múltiplo S.A.</fullName>
+                <default>false</default>
+                <label>755-Bank of America Merrill Lynch Banco Múltiplo S.A.</label>
+            </value>
+            <value>
+                <fullName>250-BCV - Banco de Crédito e Varejo S.A.</fullName>
+                <default>false</default>
+                <label>250-BCV - Banco de Crédito e Varejo S.A.</label>
+            </value>
+            <value>
+                <fullName>144-BEXS Banco de Câmbio S.A.</fullName>
+                <default>false</default>
+                <label>144-BEXS Banco de Câmbio S.A.</label>
+            </value>
+            <value>
+                <fullName>017-BNY Mellon Banco S.A.</fullName>
+                <default>false</default>
+                <label>017-BNY Mellon Banco S.A.</label>
+            </value>
+            <value>
+                <fullName>128-Braza Bank S.A. Banco de Câmbio</fullName>
+                <default>false</default>
+                <label>128-Braza Bank S.A. Banco de Câmbio</label>
+            </value>
+            <value>
+                <fullName>070-BRB - Banco de Brasília S.A.</fullName>
+                <default>false</default>
+                <label>070-BRB - Banco de Brasília S.A.</label>
+            </value>
+            <value>
+                <fullName>104-Caixa Econômica Federal</fullName>
+                <default>false</default>
+                <label>104-Caixa Econômica Federal</label>
+            </value>
+            <value>
+                <fullName>320-China Construction Bank (Brasil) Banco Múltiplo S.A.</fullName>
+                <default>false</default>
+                <label>320-China Construction Bank (Brasil) Banco Múltiplo S.A.</label>
+            </value>
+            <value>
+                <fullName>477-Citibank N.A.</fullName>
+                <default>false</default>
+                <label>477-Citibank N.A.</label>
+            </value>
+            <value>
+                <fullName>487-Deutsche Bank S.A. - Banco Alemão</fullName>
+                <default>false</default>
+                <label>487-Deutsche Bank S.A. - Banco Alemão</label>
+            </value>
+            <value>
+                <fullName>062-Hipercard Banco Múltiplo S.A.</fullName>
+                <default>false</default>
+                <label>062-Hipercard Banco Múltiplo S.A.</label>
+            </value>
+            <value>
+                <fullName>403 - Cora</fullName>
+                <default>false</default>
+                <label>403 - Cora</label>
+            </value>
+            <value>
+                <fullName>269-HSBC Brasil S.A. - Banco de Investimento</fullName>
+                <default>false</default>
+                <label>269-HSBC Brasil S.A. - Banco de Investimento</label>
+            </value>
+            <value>
+                <fullName>341-Itaú Unibanco S.A.</fullName>
+                <default>false</default>
+                <label>341-Itaú Unibanco S.A.</label>
+            </value>
+            <value>
+                <fullName>488-JPMorgan Chase Bank, National Association</fullName>
+                <default>false</default>
+                <label>488-JPMorgan Chase Bank, National Association</label>
+            </value>
+            <value>
+                <fullName>399-Kirton Bank S.A. - Banco Múltiplo</fullName>
+                <default>false</default>
+                <label>399-Kirton Bank S.A. - Banco Múltiplo</label>
+            </value>
+            <value>
+                <fullName>254-Paraná Banco S.A.</fullName>
+                <default>false</default>
+                <label>254-Paraná Banco S.A.</label>
+            </value>
+            <value>
+                <fullName>Scania Banco S.A.</fullName>
+                <default>false</default>
+                <label>Scania Banco S.A.</label>
+            </value>
+            <value>
+                <fullName>751-Scotiabank Brasil S.A. Banco Múltiplo</fullName>
+                <default>false</default>
+                <label>751-Scotiabank Brasil S.A. Banco Múltiplo</label>
+            </value>
+            <value>
+                <fullName>014-State Street Brasil S.A. - Banco Comercial</fullName>
+                <default>false</default>
+                <label>014-State Street Brasil S.A. - Banco Comercial</label>
+            </value>
+            <value>
+                <fullName>095-Travelex Banco de Câmbio S.A.</fullName>
+                <default>false</default>
+                <label>095-Travelex Banco de Câmbio S.A.</label>
+            </value>
+            <value>
+                <fullName>129-UBS Brasil Banco de Investimento S.A.</fullName>
+                <default>false</default>
+                <label>129-UBS Brasil Banco de Investimento S.A.</label>
+            </value>
+            <value>
+                <fullName>136-Unicred</fullName>
+                <default>false</default>
+                <label>136-Unicred</label>
+            </value>
+            <value>
+                <fullName>Picpay - 380</fullName>
+                <default>false</default>
+                <label>Picpay - 380</label>
+            </value>
+            <value>
+                <fullName>Banco Mercado pago - 323</fullName>
+                <default>false</default>
+                <label>Banco Mercado pago - 323</label>
+            </value>
+            <value>
+                <fullName>290</fullName>
+                <default>false</default>
+                <label>290 - Banco Pagseguro</label>
+            </value>
+            <value>
+                <fullName>133 - Banco Cresol</fullName>
+                <default>false</default>
+                <label>133 - Banco Cresol</label>
+            </value>
+            <value>
+                <fullName>273 - Sulcredi</fullName>
+                <default>false</default>
+                <label>273 - Sulcredi</label>
+            </value>
+            <value>
+                <fullName>260-Nubank</fullName>
+                <default>false</default>
+                <label>260-Nubank</label>
+            </value>
+            <value>
+                <fullName>637sofisa</fullName>
+                <default>false</default>
+                <label>637 - Sofisa</label>
+            </value>
+            <value>
+                <fullName>BANCO STONE -197</fullName>
+                <default>false</default>
+                <label>BANCO STONE -197</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

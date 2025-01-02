@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VerificaPermissaoAlteracaoOwner</fullName>
+    <active>true</active>
+    <description>A regra consiste em:
+Caso o papel seja diferente de Executivo formalização, e o campo a ser alterado é igual proprietário do contrato não permitir alterar</description>
+    <errorConditionFormula>AND( 
+           NOT(ISNEW()), 
+           NOT(ISBLANK(PRIORVALUE( OwnerId  ))),
+           ISCHANGED( OwnerId ),
+           $UserRole.Name  &lt;&gt; &quot;Executivo Formalização&quot;
+       )</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Você não tem permissão de alterar o proprietário de um contrato. Procure o superior</errorMessage>
+</ValidationRule>

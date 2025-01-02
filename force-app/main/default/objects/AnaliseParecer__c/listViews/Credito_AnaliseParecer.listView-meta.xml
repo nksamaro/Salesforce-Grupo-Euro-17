@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credito_AnaliseParecer</fullName>
+    <columns>NAME</columns>
+    <columns>Parecer__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>DataAnalise__c</columns>
+    <columns>Responsavel__c</columns>
+    <columns>NomeDaConta__c</columns>
+    <columns>ProprietarioDaOportunidade__c</columns>
+    <columns>Escalonado__c</columns>
+    <columns>StatusAnalise__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Alcada__c</field>
+        <operation>equals</operation>
+        <value>Crédito</value>
+    </filters>
+    <label>Crédito - Todos</label>
+    <sharedTo>
+        <group>Credito</group>
+        <roleAndSubordinates>GerenteGeralSecuritizadora</roleAndSubordinates>
+    </sharedTo>
+</ListView>

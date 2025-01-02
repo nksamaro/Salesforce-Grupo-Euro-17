@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusCreditoAssinaturaContrato</fullName>
+    <active>true</active>
+    <description>Não permite que a fase “Assinatura de contrato” seja selecionada se o campo “Status do crédito” não estiver preenchido.</description>
+    <errorConditionFormula>AND(
+    UnidadeNegocio__c == &quot;Operações estruturadas&quot;,
+    ISPICKVAL(StatusCredito__c, &quot;&quot;),
+    ISPICKVAL(StageName, &quot;Assinatura de Contrato&quot; )
+)</errorConditionFormula>
+    <errorMessage>Favor preencher o campo Status do Crédito.</errorMessage>
+</ValidationRule>

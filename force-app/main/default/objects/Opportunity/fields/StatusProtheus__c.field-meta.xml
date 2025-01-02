@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusProtheus__c</fullName>
+    <defaultValue>&apos;Não integrada&apos;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Campo criado para controlar quando uma oportunidade é integrada no Protheus.</description>
+    <label>Status Protheus</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Não integrada</fullName>
+                <default>false</default>
+                <label>Não integrada</label>
+            </value>
+            <value>
+                <fullName>Em processamento</fullName>
+                <default>false</default>
+                <label>Em processamento</label>
+            </value>
+            <value>
+                <fullName>Em reprocessamento</fullName>
+                <default>false</default>
+                <label>Em reprocessamento</label>
+            </value>
+            <value>
+                <fullName>Reprocessada</fullName>
+                <default>false</default>
+                <label>Reprocessada</label>
+            </value>
+            <value>
+                <fullName>Integrada</fullName>
+                <default>false</default>
+                <label>Integrada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

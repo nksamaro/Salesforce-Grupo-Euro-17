@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bdrs__All</fullName>
+    <columns>MasterLabel</columns>
+    <columns>bdrs__Work__c</columns>
+    <columns>bdrs__ExecutionType__c</columns>
+    <columns>bdrs__Priority__c</columns>
+    <columns>bdrs__Enabled__c</columns>
+    <columns>bdrs__DaysToKeepFailedLogs__c</columns>
+    <columns>bdrs__DaysToKeepSuccessLogs__c</columns>
+    <columns>NamespacePrefix</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

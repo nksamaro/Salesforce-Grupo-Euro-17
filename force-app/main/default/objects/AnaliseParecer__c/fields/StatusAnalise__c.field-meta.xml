@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusAnalise__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Status da análise</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aberto</fullName>
+                <default>false</default>
+                <label>Aberto</label>
+            </value>
+            <value>
+                <fullName>Em análise</fullName>
+                <default>false</default>
+                <label>Em análise</label>
+            </value>
+            <value>
+                <fullName>Aprovado</fullName>
+                <default>false</default>
+                <label>Aprovado</label>
+            </value>
+            <value>
+                <fullName>Aprovado com ressalva</fullName>
+                <default>false</default>
+                <label>Aprovado com ressalva</label>
+            </value>
+            <value>
+                <fullName>Reprovado</fullName>
+                <default>false</default>
+                <label>Reprovado</label>
+            </value>
+            <value>
+                <fullName>Escalonar</fullName>
+                <default>false</default>
+                <label>Escalonar</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

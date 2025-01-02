@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BancosSimulados__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Bancos simulados</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>341 - ITAU</fullName>
+                <default>false</default>
+                <label>341 - ITAU</label>
+            </value>
+            <value>
+                <fullName>033 - SANTANDER</fullName>
+                <default>false</default>
+                <label>033 - SANTANDER</label>
+            </value>
+            <value>
+                <fullName>237 - BRADESCO</fullName>
+                <default>false</default>
+                <label>237 - BRADESCO</label>
+            </value>
+            <value>
+                <fullName>104 - CAIXA</fullName>
+                <default>false</default>
+                <label>104 - CAIXA</label>
+            </value>
+            <value>
+                <fullName>CASH</fullName>
+                <default>false</default>
+                <label>CASH</label>
+            </value>
+            <value>
+                <fullName>342 - CREDITAS</fullName>
+                <default>false</default>
+                <label>342 - CREDITAS</label>
+            </value>
+            <value>
+                <fullName>GALLERIA BANK</fullName>
+                <default>false</default>
+                <label>GALLERIA BANK</label>
+            </value>
+            <value>
+                <fullName>707 - DAYCOVAL</fullName>
+                <default>false</default>
+                <label>707 - DAYCOVAL</label>
+            </value>
+            <value>
+                <fullName>T CACH</fullName>
+                <default>false</default>
+                <label>T CACH</label>
+            </value>
+            <value>
+                <fullName>611 - PAULISTA</fullName>
+                <default>false</default>
+                <label>611 - PAULISTA</label>
+            </value>
+            <value>
+                <fullName>PONTTE</fullName>
+                <default>false</default>
+                <label>PONTTE</label>
+            </value>
+            <value>
+                <fullName>PORTO SEGURO</fullName>
+                <default>false</default>
+                <label>PORTO SEGURO</label>
+            </value>
+            <value>
+                <fullName>001 - BANCO DO BRASIL</fullName>
+                <default>false</default>
+                <label>001 - BANCO DO BRASIL</label>
+            </value>
+            <value>
+                <fullName>077 - INTER</fullName>
+                <default>false</default>
+                <label>077 - INTER</label>
+            </value>
+            <value>
+                <fullName>336 - C6 BANK</fullName>
+                <default>false</default>
+                <label>336 - C6 BANK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

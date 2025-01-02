@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrazoMaximoComercialTerreno</fullName>
+    <active>true</active>
+    <description>Prazo máximo pro subtipo comercial ou terreno não deve ser maior que 240 meses</description>
+    <errorConditionFormula>AND(
+PrazoOperacao__c &gt; 240,
+OR(
+ISPICKVAL(Subtipo__c, &apos;Comercial&apos;),
+ISPICKVAL(Subtipo__c, &apos;Terreno&apos;)))</errorConditionFormula>
+    <errorMessage>Para imóvel comercial ou terreno o prazo máximo de financiamento é de 240 meses.</errorMessage>
+</ValidationRule>

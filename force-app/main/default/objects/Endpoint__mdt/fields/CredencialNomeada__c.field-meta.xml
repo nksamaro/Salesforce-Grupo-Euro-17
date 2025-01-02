@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CredencialNomeada__c</fullName>
+    <deprecated>false</deprecated>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Credencial nomeada</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EuroSecuritizadora</fullName>
+                <default>false</default>
+                <label>Euro Securitizadora</label>
+            </value>
+            <value>
+                <fullName>FlowFinanceAPI</fullName>
+                <default>false</default>
+                <label>Flow Finance API</label>
+            </value>
+            <value>
+                <fullName>FlowFinanceAuth</fullName>
+                <default>false</default>
+                <label>Flow Finance Auth</label>
+            </value>
+            <value>
+                <fullName>Protheus</fullName>
+                <default>false</default>
+                <label>Protheus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

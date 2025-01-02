@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funcao__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Função</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gerente de negocio</fullName>
+                <default>false</default>
+                <label>Gerente de negocio</label>
+            </value>
+            <value>
+                <fullName>Gerente geral</fullName>
+                <default>false</default>
+                <label>Gerente geral</label>
+            </value>
+            <value>
+                <fullName>Superintendente</fullName>
+                <default>false</default>
+                <label>Superintendente</label>
+            </value>
+            <value>
+                <fullName>Diretor</fullName>
+                <default>false</default>
+                <label>Diretor</label>
+            </value>
+            <value>
+                <fullName>Analista</fullName>
+                <default>false</default>
+                <label>Analista</label>
+            </value>
+            <value>
+                <fullName>Gestor(a)</fullName>
+                <default>false</default>
+                <label>Gestor(a)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

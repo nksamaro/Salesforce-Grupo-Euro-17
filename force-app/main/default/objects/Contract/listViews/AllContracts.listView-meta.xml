@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllContracts</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>BoletimSubscricao__c</columns>
+    <columns>Oportunidade__c</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>DataFinalContrato__c</columns>
+    <columns>CONTRACT.STATUS</columns>
+    <columns>Produto__c</columns>
+    <columns>QtdeParcelas__c</columns>
+    <columns>Taxa__c</columns>
+    <columns>ValorContrato__c</columns>
+    <columns>ValorParcela__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>UnidadeNegocio__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todos os contratos</label>
+</ListView>

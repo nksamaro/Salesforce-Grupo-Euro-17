@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Produto__c</columns>
+    <columns>Funcionario__c</columns>
+    <columns>Comissionado__c</columns>
+    <columns>Ativo__c</columns>
+    <columns>TaxaMinima__c</columns>
+    <columns>TaxaMaxima__c</columns>
+    <columns>PrazoMinimo__c</columns>
+    <columns>PrazoMaximo__c</columns>
+    <columns>QtdeMinima__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>Tudo</label>
+</ListView>

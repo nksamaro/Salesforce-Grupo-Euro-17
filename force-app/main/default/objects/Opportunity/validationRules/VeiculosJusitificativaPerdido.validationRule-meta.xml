@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VeiculosJusitificativaPerdido</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+     UnidadeNegocio__c = &quot;Produtos financeiros - Veículos&quot;,
+     ISPICKVAL(StageName, &apos;Perdido&apos;),
+     ISBLANK(Justificativa__c)
+)</errorConditionFormula>
+    <errorMessage>Para fechar esta oportunidade como &apos;Perdido&apos;, é necessário preencher o campo Justificativa.</errorMessage>
+</ValidationRule>
