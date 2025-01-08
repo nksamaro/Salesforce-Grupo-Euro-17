@@ -14,7 +14,7 @@ public class OpportunityTriggerHandler extends TriggerHandler {
 
     public override void afterUpdate(){
         this.comissaoService.criarComissao(this.listOpportunityNew, this.mapOpportunityOld);
-        //this.formalizacaoService.integrarOportunidadeGanhaProtheus(this.listOpportunityNew, this.mapOpportunityOld);
+        this.formalizacaoService.integrarOportunidadeGanhaProtheus(this.listOpportunityNew, this.mapOpportunityOld);
         this.negociacaoService.aprovarItensPendentes(this.listOpportunityNew, this.mapOpportunityOld);
     }
 }
